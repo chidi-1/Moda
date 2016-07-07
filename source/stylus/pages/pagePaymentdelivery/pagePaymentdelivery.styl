@@ -1,0 +1,217 @@
+.page-delivery
+  padding 0 20px
+
+  .tabs
+    margin 28px 0 40px
+
+    .tabs__caption
+      display block
+      text-align left
+      margin-bottom 35px
+
+      li
+        display inline-block
+        vertical-align top
+        color $cGreen
+        border-bottom 1px dashed $cGreen
+        font-size 18px
+        font-weight 300
+        margin-right 35px
+        cursor pointer
+
+      li:hover
+        border-bottom 1px dashed transparent
+
+      li.active
+        border-bottom none
+        color $cOrange
+        cursor default
+
+      li.link
+        margin-left 7px
+
+        .btn-green
+          margin-top -7px
+          height 37px
+          width 200px
+          border-radius 7px
+          text-transform none
+          font-size 14px
+
+    .tabs__content
+      //position absolute
+      //left -99999999px
+      display none
+
+    .tabs__content.active
+      //position static
+      //left 0
+      display block
+
+    .accordeon
+      padding-left 27px
+
+      .sub
+        display block
+        margin-bottom 30px
+
+        .sub--title
+          display block
+
+          span
+            position relative
+            display inline-block
+            vertical-align top
+            font-size 18px
+            font-weight 300
+            color $cGreen
+            border-bottom 1px dashed $cGreen
+            cursor pointer
+
+          span:before
+            position absolute
+            content '+'
+            width 14px
+            height 14px
+            background $cGreen
+            border-radius 15px
+            color #fff
+            top: 5px
+            left - 25px
+            text-align center
+            line-height 14px
+            font-size 15px
+
+          i
+            display inline-block
+            vertical-align top
+            font-size 18px
+            font-weight 300
+            color $cBlack
+            padding-left 5px
+
+        .sub--content
+          height 0
+          overflow hidden
+          transition height 0.2s
+          -webkit-transition height
+          padding-top 0
+
+          p
+            display block
+            margin-bottom 10px
+
+            small
+              display block
+              color $cRed
+
+            i
+              display block
+              font-style italic
+
+          .delivery-surcharge
+            width 100%
+            border-collapse collapse
+            margin-bottom 10px
+
+            tr
+              td
+                border 1px solid #000
+                padding 5px
+
+          .number-style
+            display list-style
+            list-style-type decimal
+            padding-left 30px
+
+            li
+              display list-item
+              list-style-type decimal
+              margin-bottom 10px
+
+          .dot-style
+            display list-style
+            list-style-type disc
+            padding-left 30px
+
+            li
+              display list-item
+              list-style-type disc
+              margin-bottom 10px
+
+      .sub.open
+        .sub--title
+
+          span
+            color $cOrange
+            border-bottom none
+
+          span:before
+            content '-'
+            background $cOrange
+
+        .sub--content
+          height auto
+          padding-top 25px
+
+    .map-container
+      display block
+      margin-top 25px
+
+      .map-aside
+        display inline-block
+        vertical-align top
+        width 285px
+
+        span
+          font-size 16px
+          font-weight bold
+          display block
+          padding-bottom 10px
+
+        .map-form
+          display block
+          position relative
+          width 262px
+
+          .inp
+            width 262px
+            height 31px
+            border 1px solid $cGray-l
+
+          .send-map
+            position absolute
+            height 27px
+            border-left 1px solid $cGray-l
+            top 2px
+            right 0
+            width 33px
+            background url("../img/icon--zoom.png") no-repeat 50% 50%
+
+        ul
+          margin-top 25px
+
+          li
+            display block
+            padding-bottom 11px
+
+            img
+              width 19px
+              height 19px
+              border-radius 19px
+              display inline-block
+              vertical-align top
+              margin-right 6px
+
+            span
+              display inline-block
+              vertical-align top
+              font-weight 300
+              font-size 13px
+              width 250px
+
+      .map
+        display inline-block
+        vertical-align top
+        width 645px
+        height 400px

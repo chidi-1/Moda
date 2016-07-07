@@ -1,0 +1,68 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .page-basket
+        ul.basket-nav
+            li.basket-nav__el
+                span Корзина
+            li.basket-nav__el.active
+                span Контактная информация
+            li.basket-nav__el
+                span Доставка и самовывоз
+            li.basket-nav__el
+                span Подтверждение
+            li.basket-nav__el
+                span Готово
+
+        h1 Контактные данные
+        span.basket-notification Введите свои данные
+
+        section.basket-contacts
+            .basket-contacts__form
+                form(action="" method="post")
+                    label
+                        span Ваше имя
+                            i *
+                        input(type='text' name='basket_name' required).inp
+
+                    label
+                        span Ваша фамилия
+                            i *
+                        input(type='text' name='basket_name' required).inp
+
+                    label
+                        span Ваш e-mail адрес
+                            i *
+                        input(type='text' name='basket_name' required).inp.inp-mail
+
+                    label
+                        span Ваш телефон
+                            i *
+                        input(type='text' name='basket_name' required).inp.input-phone
+
+                    label.text
+                        span
+                            i *
+                            = "- обязательные поля"
+
+                        span.notification Мы НЕ передаем контактные данные наших клиентов третьим лицам.
+
+            .basket-contacts__enter
+                span.another или
+
+                div
+                    span
+                        strong Уже у нас покупали?
+
+                    span Войдите в учетную запись, чтобы оформить быстрее
+
+                    a(href="") Войти в личный кабинет
+
+            .basket-pagination
+                a(href="").basket-pagination__prev Предыдущий шаг
+                a(href="").btn-green.basket-pagination__next.disabled Следующий шаг
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/basket-2.jpg",opacity: 0.5,top: 2,left: 0,center: false,clip: true,show: false});});

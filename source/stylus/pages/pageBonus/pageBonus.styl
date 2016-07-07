@@ -1,0 +1,148 @@
+.page-bonus
+  padding 0 20px
+
+.bonus__status
+  padding-top 7px
+
+  h4
+    margin-bottom 34px
+
+  &--current
+    display block
+    font-size 18px
+    color $cBlack
+    font-weight 500
+
+  .rope-scheme
+    position relative
+    width 1000px
+
+  &--rope
+    display block
+    background url("../img/img--rope.png") no-repeat 100% 50%
+    position relative
+    margin-top 43px
+    margin-left 32px
+    height 30px
+    margin-bottom 83px
+
+    li
+      display inline-block
+      vertical-align top
+      border-right 1px dashed #bdbdbd
+      height 30px
+      text-align center
+
+      span
+        display block
+        text-align center
+        margin-top -9px
+        font-size 12px
+        color #999999
+
+    li:nth-child(1)
+      width 143px
+    li:nth-child(2)
+      width 101px
+    li:nth-child(3)
+      width 172px
+    li:nth-child(4)
+      width 281px
+    li:nth-child(5)
+      width 250px
+      border-right none
+
+
+  &--rope:before
+    position absolute
+    content ''
+    left -35px
+    z-index 5
+    top 0
+    width 32px
+    height 32px
+    background url("../img/img--bonus-stud.png") no-repeat 0 0
+
+  .bonus__status--rope-color
+    position absolute
+    left 0
+    top 14px
+    background url("../img/img--pore-color.png") repeat-x 0 0
+    height 7px
+
+    span
+      position absolute
+      color #875620
+      font-size 10px
+      font-weight 300
+      border 1px solid #875620
+      border-radius 5px
+      padding 7px 10px
+      min-width 170px
+      text-align center
+      right -100px
+      top 22px
+
+  .bonus__status--rope-color:after
+    position absolute
+    content ''
+    width 31px
+    height 38px
+    background url("../img/img--node.png") no-repeat 0 0
+    top -17px
+    right -29px
+
+  .bonus__status--rope:after
+    position absolute
+    content ''
+    width 40px
+    height 25px
+    background url("../img/img--pore-end.png") no-repeat 0 0
+    top 2px
+    right -40px
+
+.bonus__info
+  li
+    display block
+    padding-bottom 31px
+
+  &--level
+    display block
+    vertical-align middle
+    font-size 14px
+    line-height 25px
+    color $cPink
+    margin-bottom 17px
+
+    i
+      display inline-block
+      vertical-align middle
+      color #ffffff
+      width 25px
+      height 25px
+      text-align center
+      line-height 25px
+      background $cPink
+      border-radius 25px
+      margin-right 10px
+
+  &--title
+    display block
+    font-size 18px
+    color #000000
+    margin-bottom 5px
+
+  p
+    font-size 16px
+    line-height 17px
+    color #666666
+
+  .btn-green
+    display block
+    margin 31px auto 55px
+    width 220px
+    border-radius 5px
+    height 50px
+    font-size 18px
+    line-height 52px
+

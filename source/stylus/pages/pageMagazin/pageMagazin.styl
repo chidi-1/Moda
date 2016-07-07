@@ -1,0 +1,52 @@
+.page-magazin
+  padding 0 20px
+
+  h1
+    color $cPink
+
+  .tabs
+    margin 42px 0 40px
+
+    .tabs__caption
+      display block
+      background #fcfcfc
+      border-radius 5px
+      border 1px dashed #ebebeb
+      padding 11px 17px 15px
+      text-align left
+      width 976px
+      margin-bottom 55px
+
+      li
+        display inline-block
+        vertical-align top
+        color $cGreen
+        border-bottom 1px dashed $cGreen
+        font-size 18px
+        font-weight 300
+        margin-right 35px
+        cursor pointer
+
+      li:hover
+        border-bottom 1px dashed transparent
+
+      li.active
+        border-bottom none
+        color $cOrange
+        cursor default
+
+    .tabs__content
+      display none
+
+    .tabs__content.active
+      display block
+
+    .magazin__more
+      display block
+      text-align center
+      padding-top 20px
+
+      a
+        color #679a63
+        font-size 16px
+        border-bottom 1px dashed #679a63

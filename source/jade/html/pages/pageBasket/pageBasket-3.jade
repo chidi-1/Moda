@@ -1,0 +1,253 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .page-basket
+        ul.basket-nav
+            li.basket-nav__el
+                span Корзина
+            li.basket-nav__el
+                span Контактная информация
+            li.basket-nav__el.active
+                span Доставка и самовывоз
+            li.basket-nav__el
+                span Подтверждение
+            li.basket-nav__el
+                span Готово
+
+        h1 Доставка и самовывоз
+        span.basket-notification Обратите внимание, что возможные способы доставки и оплаты могут меняться в зависимости от выбранного региона!
+
+        section.basket-delivery
+            form(action="../../../js/ajax/delivery.php" method="post")
+                div(data-url="../../../js/ajax/region.php" data-method="post").basket-delivery__region
+                    span.title Регион
+
+                    select(name="basket_region").inp-styled
+                        option(value="basket_region_01") Москва
+                        option(value="basket_region_02") Питер
+
+                    span От выбранного региона зависят доступные способы доставки и оплаты
+                .basket-delivery__load.tabs
+                    .basket-delivery__method
+                        span.title Способ доставки
+
+                        div.tabs__caption
+                            label.active
+                                input(type="radio" name="basket_method" value="basket_method_01" checked).hidden-block
+                                .psevdoradio
+                                    i
+                                span Самовывоз (бесплатно)
+
+                            label
+                                input(type="radio" name="basket_method" value="basket_method_02").hidden-block
+                                .psevdoradio
+                                    i
+                                span Курьерская служба (400-600 р.)
+
+                            label
+                                input(type="radio" name="basket_method" value="basket_method_03").hidden-block
+                                .psevdoradio
+                                    i
+                                span Автоматизированные пункты выдачи PickPoint (100 р.)
+
+                            label
+                                input(type="radio" name="basket_method" value="basket_method_04").hidden-block
+                                .psevdoradio
+                                    i
+                                span Почта России (200-700 р.)
+
+                            label
+                                input(type="radio" name="basket_method" value="basket_method_05").hidden-block
+                                .psevdoradio
+                                    i
+                                span EMS (500р.)
+
+                    .tabs__content
+                        .basket-delivery__pick
+                            span.title Выбор пункта самовывоза
+
+                            p Для покупателей из Москвы и Подмосковья
+
+                            div.map-container
+                                div.map-aside
+                                    div(data-url="../../../js/ajax/map-search.php" data-method="post").map-form
+                                        input(type='text' name="map_search" placeholder="Поиск по метро").inp
+                                        a(href="").send-map.js--send-map
+
+                                    ul
+                                        li(style="color: #0252a2")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                                            = " Название станции Метро"
+                                        li(style="color: #0252a2")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                                            = " Название станции Метро"
+                                        li(style="color: #0252a2")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                                            = " Название станции Метро"
+                                        li(style="color: #0252a2")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                                            = " Название станции Метро"
+
+                                        li(style="color: #b1d332")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                                            = " Название станции Метро"
+                                        li(style="color: #b1d332")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                                            = " Название станции Метро"
+                                        li(style="color: #b1d332")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                                            = " Название станции Метро"
+                                        li(style="color: #b1d332")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                                            = " Название станции Метро"
+
+                                        li(style="color: #ef1e25")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                                            = " Название станции Метро"
+                                        li(style="color: #ef1e25")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                                            = " Название станции Метро"
+                                        li(style="color: #ef1e25")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                                            = " Название станции Метро"
+                                        li(style="color: #ef1e25")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                                            = " Название станции Метро"
+
+                                div(id="maptown" data-point="../../../js/ajax/mapsptb.json").map
+
+                        .basket-delivery__comment
+                            span Комментарий
+
+                            textarea(placeholder='Комментарий' name='basket__comment').inp
+
+                        .basket-delivery__total
+                            span
+                                i 100 руб.
+                                = " получение посылки в выбранной точке PickPoint"
+
+
+                    .tabs__content
+                        .basket-delivery__pick
+                            span.title Информация о доставке
+
+                            .basket-adress
+                                .form-col__el
+                                    span Дата доставки
+                                    label.date
+                                        select(name="date").inp-styled
+                                            option(value="date__01" selected).filter-default Завтра (1 марта 2013)
+                                            option(value="date__02") 2 марта 2013
+
+                                    label.time
+                                        select(name="time-start").inp-styled
+                                            option(value="time-start__01" selected).filter-default 9:00
+                                            option(value="time-start__02") 10:00
+
+                                    label.time
+                                        select(name="time-end").inp-styled
+                                            option(value="time-end__01" selected).filter-default 20:00
+                                            option(value="time-end__02") 21:00
+
+                                .form-col__el
+                                    span Адрес
+                                    label
+                                        input(type="text" name="index" required placeholder="Индекс").inp.required.inp-index
+
+                                    label.require
+                                        input(type="text" name="city" required placeholder="Город").inp.required.inp-city
+
+                                    label.require
+                                        input(type="text" name="street" required placeholder="Улица").inp.required.inp-street
+
+                                    label.require
+                                        input(type="text" name="house" required placeholder="дом").inp.required.inp-house
+
+                                    label
+                                        input(type="text" name="section" placeholder="корп.").inp.inp-section
+
+                                    label
+                                        input(type="text" name="flat" required placeholder="кв.").inp.required.inp-flat
+
+                                .form-col__el
+                                    span Комментарий
+                                    textarea(name='text' placeholder="Комментарий")
+
+
+                    .tabs__content.active
+                        .basket-delivery__pick
+                            span.title Выбор пункта PickPoint
+
+                            p После получения SMS-сообщения или e-mail с&nbsp;уникальным кодом посылки в&nbsp;течение 3-х дней вы&nbsp;забираете свой товар в&nbsp;специализированных постаматах или пунктах выдачи в&nbsp;любое удобное для Вас время.
+
+                            div.map-container
+                                div.map-aside
+                                    div(data-url="../../../js/ajax/map-search.php" data-method="post").map-form
+                                        input(type='text' name="map_search" placeholder="Поиск по метро").inp
+                                        a(href="").send-map.js--send-map
+
+                                    ul
+                                        li(style="color: #0252a2")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                                            = " Название станции Метро"
+                                        li(style="color: #0252a2")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                                            = " Название станции Метро"
+                                        li(style="color: #0252a2")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                                            = " Название станции Метро"
+                                        li(style="color: #0252a2")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                                            = " Название станции Метро"
+
+                                        li(style="color: #b1d332")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                                            = " Название станции Метро"
+                                        li(style="color: #b1d332")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                                            = " Название станции Метро"
+                                        li(style="color: #b1d332")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                                            = " Название станции Метро"
+                                        li(style="color: #b1d332")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                                            = " Название станции Метро"
+
+                                        li(style="color: #ef1e25")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                                            = " Название станции Метро"
+                                        li(style="color: #ef1e25")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                                            = " Название станции Метро"
+                                        li(style="color: #ef1e25")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                                            = " Название станции Метро"
+                                        li(style="color: #ef1e25")
+                                            img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                                            = " Название станции Метро"
+
+                                div(id="mappick" data-point="../../../js/ajax/mapsptb.json").map
+
+                        .basket-delivery__comment
+                            span Комментарий
+
+                            textarea(placeholder='Комментарий' name='basket__comment').inp
+
+                        .basket-delivery__total
+                            span
+                                i 100 руб.
+                                = " получение посылки в выбранной точке PickPoint"
+
+                    .tabs__content
+
+                    .tabs__content
+
+        .basket-pagination
+            a(href="").basket-pagination__prev Предыдущий шаг
+            a(href="").btn-green.basket-pagination__next.disabled Следующий шаг
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/basket-3.jpg",opacity: 0.5,top: 2,left: 108,center: false,clip: true,show: false});});
+    script(type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")

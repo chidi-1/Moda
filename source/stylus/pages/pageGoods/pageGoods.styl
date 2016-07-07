@@ -1,0 +1,712 @@
+.page-item
+  padding 0 20px
+
+  .item
+    padding-top 13px
+    padding-bottom 58px
+
+  .item__header
+    display block
+    padding 0 30px 0 0
+    white-space nowrap
+
+    h2
+      display block
+      font-size 48px
+      color $cGray
+      padding-bottom 2px
+
+    span
+      display block
+      color $cGray
+      font-size 18px
+      padding-bottom 15px
+
+      strong
+        font-weight 500
+
+  .item__photo
+    display inline-block
+    vertical-align top
+    width 520px
+    white-space normal
+
+    .tabs__content.active
+      display inline-block
+
+    .tabs__content
+      display none
+      vertical-align top
+      width 410px
+      height 390px
+      overflow hidden
+
+      img
+        display block
+        min-width 100%
+        min-height 100%
+
+    .tabs__caption
+      display inline-block
+      vertical-align top
+      margin-left 3px
+      width 93px
+
+      li
+        display block
+        margin-bottom 6px
+        width 93px
+        height 93px
+        overflow hidden
+        cursor pointer
+
+        img
+          display block
+          min-width 100%
+          min-height 100%
+
+      li:last-child
+        margin-bottom 0
+
+  .item__info
+    display inline-block
+    vertical-align top
+    width 485px
+    margin-left 27px
+    margin-top -8px
+    white-space normal
+
+    .item__info-price
+      display inline-block
+      vertical-align top
+      font-size 38px
+      color $cRed
+      margin-right 10px
+      font-weight 400
+
+      i
+        font-family $fRublre
+
+    .item__info-measure
+      color $cGray
+      font-size 38px
+      display inline-block
+      vertical-align top
+
+      i
+        font-style normal
+        font-size 16px
+        line-height 24px
+        vertical-align top
+
+    .item__info--params
+      display block
+      margin-top -2px
+      margin-left 5px
+
+      span
+        display block
+        font-size 13px
+        font-weight 300
+        padding-bottom 1px
+
+        strong
+          font-weight 500
+
+    p
+      display block
+      font-weight 300
+      font-size 13px
+      margin-top 13px
+      margin-left 5px
+      margin-bottom 15px
+
+    .item__info-icons
+      margin-top 10px
+      display block
+      text-align left
+      margin-left 5px
+
+      li
+        margin-right 13px
+
+        img
+          display block
+          width 52px
+          height 40px
+
+    .item__info__buttons
+      margin-top 22px
+      position relative
+
+      .counter
+        display inline-block
+        vertical-align top
+        width 100px
+        margin-right 15px
+        margin-left 3px
+
+        .inp
+          border 1px solid #cccccc
+          width 100px
+          height 71px
+          line-height 69px
+          font-size 18px
+
+        a
+          right 5px
+
+        .counter-add
+          top 5px
+
+        .counter-remove
+          bottom 5px
+
+      .btn-green
+        display inline-block
+        vertical-align top
+        height 71px
+        width 256px
+        margin-right 0
+        text-align center
+        padding-left 50px
+        position relative
+
+        strong
+          font-weight 400
+          text-transform uppercase
+          display block
+          padding-top 14px
+          font-size 24px
+          line-height 28px
+
+        i
+          display block
+          text-align center
+          font-size 14px
+          line-height 14px
+          text-transform none
+
+      .btn-green:after
+        position absolute
+        font-size 24px
+        color #ffffff
+        content ''
+        background url("../img/icon--basket-l.png") no-repeat 0 0
+        top 23px
+        left 27px
+        width 26px
+        height 25px
+
+      div
+        display inline-block
+        vertical-align top
+        width 105px
+        padding-top 13px
+
+        a
+          display block
+          margin-bottom 10px
+          font-size 12px
+          color $cGreen
+          padding-left 10px
+          white-space nowrap
+          margin-top 17px
+
+          i
+            font-family $fIcons
+            display inline-block
+            vertical-align top
+            margin-right 10px
+
+          img
+            margin-right 6px
+
+      .popup
+        display none
+        position absolute
+        background #fff
+        border 1px solid #cccccc
+        border-radius 10px
+        padding 9px 10px
+        right -146px
+        bottom 12px
+        width auto
+
+        span
+          padding-right 5px
+          display inline-block
+          vertical-align top
+          padding-bottom 0
+
+        a
+          color $cGreen
+          text-decoration underline
+          display inline-block
+          vertical-align top
+          margin-top 3px
+          margin-left 5px
+          margin-bottom 0
+
+      .popup:before
+        position absolute
+        content ''
+        width 9px
+        height 9px
+        border-top 1px solid #cccccc
+        border-left 1px solid #cccccc
+        background #ffffff
+        transform rotate(-45deg)
+        -webkit-transform rotate(-45deg)
+        left - 6px
+        top 13px
+
+.item--decor-border
+  display block
+  margin-left -13px
+  margin-right -13px
+
+  div
+    background url("../img/mg--rope.png") repeat-x 0 0
+    height 7px
+    position relative
+    z-index 15
+
+.item--decor-border:after,
+.item--decor-border:before
+  position absolute
+  content ''
+  width 18px
+  height 18px
+  z-index 10px
+  background url("../img/img--rope-end.png") no-repeat 0 0
+  top -5px
+
+.item--decor-border:after
+  left -5px
+
+.item--decor-border:before
+  right -5px
+
+.item__related
+  padding-top 55px
+  white-space nowrap
+  padding-bottom 79px
+
+  &--header
+    display block
+    border-bottom 1px solid #edefea
+
+    .show-all
+      display inline-block
+      vertical-align top
+      text-decoration underline
+      float right
+      font-size 13px
+      padding-top 15px
+
+    h4
+      display inline-block
+      vertical-align top
+      font-size 29px
+      margin-bottom 17px
+
+  &__compaign
+    display inline-block
+    vertical-align top
+    width 510px
+    margin-left -5px
+    white-space normal
+
+    .show-all
+      color $cGreen
+      margin-left -7px
+
+    .compaign-list
+      margin-left -8px
+      margin-top 19px
+      width 530px
+
+      &__el
+        display inline-block
+        vertical-align top
+        width 176px
+        position relative
+
+        .visible
+          border 1px solid transparent
+          position relative
+          z-index 15
+          padding 6px
+          width 163px
+          height 163px
+          overflow hidden
+          border-radius 10px
+
+          img
+            display block
+            min-width 100%
+            min-height 100%
+            border-radius 10px
+
+        .hidden
+          position absolute
+          top 0
+          left 0
+          right 0
+          z-index 20
+          padding 6px
+          border 1px solid #cccccc
+          border-radius 10px
+          opacity 0
+          background #fff
+          transition opacity 0.2s
+          -webkit-transition opacity 0.2s
+          width 0
+          height 0
+
+          a
+            display block
+            width 163px
+            height 163px
+            overflow hidden
+            border-radius 10px
+            position relative
+            margin-bottom 10px
+
+            img
+              display block
+              min-width 100%
+              min-height 100%
+              border-radius 10px
+
+          a:after
+            position absolute
+            content ''
+            width 30px
+            height 30px
+            top 50%
+            left 50%
+            margin-top -15px
+            margin-left -15px
+            background url("../img/icon--zoom-l.png") no-repeat 0 0
+            opacity 0
+            transition opacity 0.2s
+            -webkit-transition opacity 0.2s
+
+          .compaign-list__el-name
+            display block
+            color $cBlack
+            font-size 13px
+            margin-left 7px
+
+          .compaign-list__el-price
+            display inline-block
+            vertical-align top
+            color #b74638
+            font-size 13px
+            margin-right 3px
+            margin-left 7px
+
+            i
+              font-family 'als_rublregular'
+              font-size 13px
+              font-style normal
+              line-height inherit
+
+          .compaign-list__el-measure
+            display inline-block
+            vertical-align top
+            color #999
+            font-size 13px
+
+            i
+              font-style normal
+              font-size 8px
+              line-height 11px
+              vertical-align top
+
+      &__el:hover
+        .hidden
+          opacity 1
+          width auto
+          height auto
+
+          a:after
+            opacity 1
+
+  &__furniture
+    display inline-block
+    vertical-align top
+    width 490px
+    margin-left 45px
+    white-space normal
+
+    .item__related--header
+      border-bottom  1px solid #fddfde
+      width 482px
+
+      .show-all
+        color $cRed
+
+      h4
+        color $cPink
+
+    .furniture-list
+      display block
+      padding-top 16px
+
+      &__el
+        display block
+        position relative
+        margin-bottom 15px
+
+        a
+          display inline-block
+          vertical-align top
+          color $cGreen
+          text-decoration underline
+          width 312px
+          font-size 14px
+          margin-top 8px
+
+        &--img
+          width 0
+          height 0
+          position absolute
+          left -190px
+          top - 70px
+          background #ffffff
+          z-index 15
+          box-shadow 0 0 5px rgba(0,0,0,0.3)
+          border-radius 5px
+          padding 3px
+          opacity 0
+          transition opacity 0.2s
+          -webkit-transition opacity 0.2s
+
+
+          img
+            display block
+            min-height 100%
+            min-width 100%
+
+        a:hover
+          text-decoration none
+          color $cGray
+
+        a:hover + .furniture-list__el--img
+          width 158px
+          height 158px
+          opacity 1
+
+        form
+          display inline-block
+          vertical-align top
+          position relative
+          width 170px
+
+          .counter
+            display inline-block
+            vertical-align top
+            margin-left 0
+            margin-right 8px
+            width 51px
+            position relative
+
+            a
+              width 18px
+              margin-top 0
+              zoom 0.8
+              right 4px
+
+            .counter-add
+              top 0
+
+            .counter-remove
+              bottom 0
+
+          .inp
+            width 51px
+            height 31px
+            line-height 29px
+            border 1px solid #cccccc
+            text-align left
+            padding-left 10px
+
+          a.btn-green
+            display inline-block
+            vertical-align top
+            height 31px
+            width 111px
+            text-decoration none
+            line-height 33px
+            color #fff
+            margin-top 0
+            padding-left 27px
+            font-size 13px
+            position relative
+
+          a.btn-green:before
+            position absolute
+            content ''
+            width 14px
+            height 14px
+            background url("../img/icon--basket.png") no-repeat 0 0
+            top 9px
+            left 9px
+            background-size  100% 100%
+
+          .popup
+            display none
+            position absolute
+            background #fff
+            border 1px solid #ccc
+            border-radius 10px
+            padding 9px 10px
+            right -237px
+            bottom -4px
+            width 210px
+
+            span
+              padding-right 5px
+              display inline-block
+              vertical-align top
+              padding-top 1px
+
+            a
+              text-decoration underline
+              color $cGreen
+              margin-top 0
+              display inline
+
+          .popup:before
+            position absolute
+            content ''
+            width 9px
+            height 9px
+            border-top 1px solid #ccc
+            border-left 1px solid #ccc
+            background #fff
+            -ms-transform rotate(-45deg)
+            transform rotate(-45deg)
+            -webkit-transform rotate(-45deg)
+            left -6px
+            top 13px
+
+      &__el:last-child
+        margin-bottom 0
+
+.item__like
+  h2.bg--green-left
+    display inline-block
+    vertical-align top
+
+  .show-all
+    display inline-block
+    vertical-align top
+    margin-left 10px
+    font-size 13px
+    text-decoration underline
+    font-weight $cGreen
+    margin-top 19px
+
+  .show-all:hover
+    text-decoration none
+
+  .item-list
+    margin-top 5px
+    margin-left -18px
+    padding-bottom 10px
+
+    .item-list__el
+      width 164px
+      margin-left 12px
+
+      .item-list__el--img
+        width 163px
+        height 163px
+        border-radius  10px
+        margin-bottom 10px
+
+      .item-list__el__ifno
+        padding 0
+
+        .item-list__el__ifno-title
+          display block
+          color $cBlack
+          font-size 13px
+          margin-left 7px
+
+        .item-list__el__ifno-price
+          display inline-block
+          vertical-align top
+          color #b74638
+          font-size 13px
+          margin-right 2px
+          margin-left 7px
+
+          i
+            font-size 13px
+
+        .item-list__el__ifno-measure
+          font-size 13px
+
+          i
+            font-style normal
+            font-size 8px
+            line-height 11px
+
+      .item-list__el__buttons
+        margin-bottom 10px
+
+        .counter
+          display inline-block
+          vertical-align top
+          margin-left 0
+          margin-right 7px
+          width 42px
+          position relative
+
+          a
+            width 18px
+            height 12px
+            margin-top 0
+            zoom 0.8
+
+          .counter-add
+            top 1px
+            background-position 3px 3px
+
+          .counter-remove
+            bottom 1px
+            background-position 3px -35px
+
+      .inp
+        width 42px
+        height 25px
+        font-size 12px
+
+      .btn-green
+        width 94px
+        height 25px
+        padding-left 20px
+        font-size 12px
+        line-height 28px
+
+      .btn-green:before
+        width 11px
+        height 11px
+        background-size 100% 100%
+        top 8px
+        left 8px
+
+      .popup
+        right -200px
+        bottom -6px
+
+        span
+          font-size 12px
+
+        a
+          font-size 12px

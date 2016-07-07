@@ -1,0 +1,123 @@
+.page-furniture
+  padding 0 20px
+
+  h1
+    color $cPink
+
+  .tabs
+    margin 22px 0 40px
+
+    .tabs__caption
+      display block
+      background #fcfcfc
+      border-radius 5px
+      border 1px dashed #ebebeb
+      padding 11px 17px 15px
+      text-align left
+      width 976px
+      margin-bottom 55px
+
+      .tabs__caption-list
+        display block
+
+        li
+          display inline-block
+          vertical-align top
+          margin-right 35px
+
+          label
+            display block
+            cursor pointer
+
+            input
+              display none
+
+            span
+              color $cGreen
+              border-bottom 1px dashed $cGreen
+              font-size 18px
+              font-weight 300
+
+        li.active
+          label
+            cursor default
+
+            span
+              border-bottom none
+              color $cOrange
+
+      .tabs__caption-filter
+        display block
+
+        .furniture-filter
+          display none
+
+        .furniture-filter.active
+          margin-top 21px
+          display block
+
+          label
+            display inline-block
+            vertical-align top
+            margin-right 6px
+
+            input
+              display none
+
+            span:after
+              display block
+
+            input:checked + span
+              font-weight 300
+              font-size 13px
+              color $cOrange
+              padding 5px 24px 5px 9px
+              border 1px solid $cOrange
+              border-radius 5px
+              transition color 0.2s,  border 0.2s
+              -webkit-transition color 0.2s,  border 0.2s
+              position relative
+              display block
+
+            input:checked + span:after
+              position absolute
+              content ''
+              width 8px
+              height 8px
+              background url("../img/icon-remove.png") no-repeat 0 0
+              cursor pointer
+              right 8px
+              top 10px
+              transition opacity 0.2s
+              -webkit-transition opacity 0.2s
+
+            input + span
+              font-weight 300
+              font-size 13px
+              color $cGreen
+              padding 5px 24px 5px 9px
+              border 1px solid transparent
+              border-radius 5px
+              transition color 0.2s,  border 0.2s
+              -webkit-transition color 0.2s,  border 0.2s
+              position relative
+              display block
+
+            input + span:after
+              display block
+
+    .tabs__content
+      display none
+
+    .tabs__content.active
+      display block
+
+    .furniture__more
+      display block
+      text-align center
+      padding-top 20px
+
+      a
+        color #679a63
+        font-size 16px
+        border-bottom 1px dashed #679a63

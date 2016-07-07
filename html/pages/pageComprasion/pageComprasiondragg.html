@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="../../../js/app-common.js"></script>
+    <script src="../../../js/app.js"></script>
+    <script src="../../../js/jquery.pixlayout.0.9.6.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,100|Lobster&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  </head>
+  <body><img src="../../../img/bg__grid.png" alt / class="bg__decor--grid">
+    <main><img src="../../../img/decor--stud-1.png" alt / class="bg__decor--stud1"><img src="../../../img/decor--stud-2.png" alt / class="bg__decor--stud2"><img src="../../../img/decor--stud-3.png" alt / class="bg__decor--stud3"><img src="../../../img/decor--stud-2-niddle.png" alt / class="bg__decor--stud4"><img src="../../../img/decor--stud-3-niddle.png" alt / class="bg__decor--stud5">
+      <div class="content-wrap">
+        <header class="header">
+          <div class="justifyed grid">
+            <div class="header-logo grid-item"><a href=""><img src="../../../img/logo--header.png" alt><span>Интернет-магазин Итальянских и Американских тканей</span></a></div>
+            <div class="header__contacts grid-item">
+              <div><a href="tel:88007777131" class="header__contacts-phone">+7 800 777 71 31</a><span>Бесплатный звонок по всей России</span></div>
+              <div><a href="tel:84957717131" class="header__contacts-phone">+7 495 771 71 31</a><span>Для звонков из Москвы и области</span></div>
+              <div><a href="" class="header__contacts-info">Контактная информация</a></div>
+            </div>
+            <div class="header__links grid-item"><a href="../pagePopup/popup-enter.html" class="fancybox.ajax header__links-ent fancy"><img src="../../../img/icon--enter.png" alt /><span>Вход</span></a><a href="../pagePopup/popup-registration.html" class="fancybox.ajax header__links-reg fancy"><img src="../../../img/icon--reg.png" alt /><span>Регистрация</span></a><a href="" class="header__links-comp empty"><img src="../../../img/icon--comp.png" alt /><span>Сравнение</span><i>9</i></a><a href="" class="header__links-bas"><img src="../../../img/icon--bas.png" alt /><span>Корзина</span><i>99</i></a></div>
+          </div>
+        </header>
+        <nav>
+          <div class="justifyed">
+            <ul class="main-nav">
+              <li class="main-nav__el main-nav__el-red"><a href="">Ткани</a></li>
+              <li class="main-nav__el main-nav__el-red"><a href="">Фурнитура</a></li>
+              <li class="main-nav__el main-nav__el-red"><a href="">Журналы и выкройки</a></li>
+              <li class="main-nav__el main-nav__el-red"><a href="">Ткани оптом</a></li>
+              <li class="main-nav__el main-nav__el-green"><a href="">Доставка и оплата</a></li>
+              <li class="main-nav__el main-nav__el-green"><a href="">О нас</a></li>
+              <li class="main-nav__el main-nav__el-green"><a href="">Блог</a></li>
+            </ul>
+            <div class="search"><a href="" class="search--icon js--search-open"><i class="icon-search"></i></a>
+              <form action="" method="post">
+                <input type="text" name="search" placeholder="Введите название или артикул" class="inp">
+                <label>
+                  <input type="submit" value="">
+                </label>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div class="page-comprasion">
+          <ul class="breadcrumbs">
+            <li><a href="">Главная страница</a></li>
+            <li><span>Сравнение</span></li>
+          </ul>
+          <h1>Сравнение</h1>
+          <div class="tabs">
+            <ul class="tabs__caption">
+              <li class="comprasion--icon-title active"><i></i></li>
+              <li class="comprasion--icon-list"><i></i></li>
+            </ul>
+            <div class="tabs__content tab-title active">
+              <ul data-url="../../../js/ajax/subscribe.php" data-method="post" class="comparison-list">
+                <li class="comparison-list__el draggable ui-draggable">
+                  <div class="title-type"><img src="../../../img/img--material-3.jpg" alt / class="comparison-list__el-img">
+                    <div class="hidden-wrap">
+                      <div style="background:#fff  url('../../../img/img--material-3.jpg') no-repeat 0 0" class="hidden"><a href="#" class="dragg-comparison js--dragg-comparison"></a><a href="" data-id="item_01" class="remove-comparison js--remove-comparison"></a>
+                        <div class="comparison-list__el-content"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span>
+                          <div class="comparison-list__el--form">
+                            <form action="../../../js/ajax/add-comparison-basket.php" method="post"></form>
+                            <input type="hidden" name="item_id" value="id_01">
+                            <div data-step="1" class="counter">
+                              <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                            </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                            <div class="popup"><span>Добавлено</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="comparison-list__el draggable ui-draggable">
+                  <div class="title-type"><img src="../../../img/img--material-4.jpg" alt / class="comparison-list__el-img">
+                    <div class="hidden-wrap">
+                      <div style="background: url('../../../img/img--material-4.jpg') no-repeat 0 0" class="hidden"><a href="#" class="dragg-comparison js--dragg-comparison"></a><a href="" data-id="item_02" class="remove-comparison js--remove-comparison"></a>
+                        <div class="comparison-list__el-content"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span>
+                          <div class="comparison-list__el--form">
+                            <form action="../../../js/ajax/add-comparison-basket.php" method="post">
+                              <input type="hidden" name="item_id" value="id_01">
+                              <div data-step="1" class="counter">
+                                <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                              </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                              <div class="popup"><span>Добавлено</span></div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="comparison-list__el draggable ui-draggable">
+                  <div class="title-type"><img src="../../../img/img--material-2.jpg" alt / class="comparison-list__el-img">
+                    <div class="hidden-wrap">
+                      <div style="background: url('../../../img/img--material-2.jpg') no-repeat 0 0" class="hidden"><a href="#" class="dragg-comparison js--dragg-comparison"></a><a href="" data-id="item_03" class="remove-comparison js--remove-comparison"></a>
+                        <div class="comparison-list__el-content"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span>
+                          <div class="comparison-list__el--form">
+                            <form action="../../../js/ajax/add-comparison-basket.php" method="post">
+                              <input type="hidden" name="item_id" value="id_01">
+                              <div data-step="1" class="counter">
+                                <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                              </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                              <div class="popup"><span>Добавлено                        .</span></div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="comparison-list__el draggable ui-draggable">
+                  <div class="title-type"><img src="../../../img/img--material-6.jpg" alt / class="comparison-list__el-img">
+                    <div class="hidden-wrap">
+                      <div style="background: url('../../../img/img--material-6.jpg') no-repeat 0 0" class="hidden"><a href="#" class="dragg-comparison js--dragg-comparison"></a><a href="" data-id="item_04" class="remove-comparison js--remove-comparison"></a>
+                        <div class="comparison-list__el-content"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span>
+                          <div class="comparison-list__el--form">
+                            <form action="../../../js/ajax/add-comparison-basket.php" method="post">
+                              <input type="hidden" name="item_id" value="id_01">
+                              <div data-step="1" class="counter">
+                                <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                              </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                              <div class="popup"><span>Добавлено</span></div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="comparison-list__el draggable ui-draggable">
+                  <div class="title-type"><img src="../../../img/img--material-1.jpg" alt / class="comparison-list__el-img">
+                    <div class="hidden-wrap">
+                      <div style="background: url('../../../img/img--material-1.jpg') no-repeat 0 0" class="hidden"><a href="#" class="dragg-comparison js--dragg-comparison"></a><a href="" data-id="item_05" class="remove-comparison js--remove-comparison"></a>
+                        <div class="comparison-list__el-content"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span>
+                          <div class="comparison-list__el--form">
+                            <form action="../../../js/ajax/add-comparison-basket.php" method="post">
+                              <input type="hidden" name="item_id" value="id_01">
+                              <div data-step="1" class="counter">
+                                <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                              </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                              <div class="popup"><span>Добавлено</span></div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="comparison-list__el draggable ui-draggable">
+                  <div class="title-type"><img src="../../../img/img--material-2.jpg" alt / class="comparison-list__el-img">
+                    <div class="hidden-wrap">
+                      <div style="background: url('../../../img/img--material-2.jpg') no-repeat 0 0" class="hidden"><a href="#" class="dragg-comparison js--dragg-comparison"></a><a href="" data-id="item_06" class="remove-comparison js--remove-comparison"></a>
+                        <div class="comparison-list__el-content"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span>
+                          <div class="comparison-list__el--form">
+                            <form action="../../../js/ajax/add-comparison-basket.php" method="post">
+                              <input type="hidden" name="item_id" value="id_01">
+                              <div data-step="1" class="counter">
+                                <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                              </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                              <div class="popup"><span>Добавлено</span></div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs__content tab-list">
+              <ul data-url="../../../js/ajax/subscribe.php" data-method="post" class="comparison-list">
+                <li class="comparison-list__el list-type"><a href="" data-id="item_01" class="remove-comparison js--remove-comparison"></a>
+                  <div class="comparison-list__el-img"><img src="../../../img/img--material-2.jpg" alt /></div>
+                  <div class="comparison-list__el__info"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-art">Артикул 78658632</span><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span></div>
+                  <div class="comparison-list__el--form">
+                    <form action="../../../js/ajax/add-comparison-basket.php" method="post">
+                      <input type="hidden" name="item_id" value="id_01">
+                      <div data-step="1" class="counter">
+                        <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                      </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                      <div class="popup"><span>Добавлено</span></div>
+                    </form>
+                  </div>
+                </li>
+                <li class="comparison-list__el list-type"><a href="" data-id="item_01" class="remove-comparison js--remove-comparison"></a>
+                  <div class="comparison-list__el-img"><img src="../../../img/img--material-2.jpg" alt /></div>
+                  <div class="comparison-list__el__info"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-art">Артикул 78658632</span><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span></div>
+                  <div class="comparison-list__el--form">
+                    <form action="../../../js/ajax/add-comparison-basket.php" method="post">
+                      <input type="hidden" name="item_id" value="id_01">
+                      <div data-step="1" class="counter">
+                        <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                      </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                      <div class="popup"><span>Добавлено</span></div>
+                    </form>
+                  </div>
+                </li>
+                <li class="comparison-list__el list-type"><a href="" data-id="item_01" class="remove-comparison js--remove-comparison"></a>
+                  <div class="comparison-list__el-img"><img src="../../../img/img--material-2.jpg" alt /></div>
+                  <div class="comparison-list__el__info"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-art">Артикул 78658632</span><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span></div>
+                  <div class="comparison-list__el--form">
+                    <form action="../../../js/ajax/add-comparison-basket.php" method="post">
+                      <input type="hidden" name="item_id" value="id_01">
+                      <div data-step="1" class="counter">
+                        <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                      </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                      <div class="popup"><span>Доб</span></div>
+                    </form>
+                  </div>
+                </li>
+                <li class="comparison-list__el list-type"><a href="" data-id="item_01" class="remove-comparison js--remove-comparison"></a>
+                  <div class="comparison-list__el-img"><img src="../../../img/img--material-2.jpg" alt /></div>
+                  <div class="comparison-list__el__info"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-art">Артикул 78658632</span><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span></div>
+                  <div class="comparison-list__el--form">
+                    <form action="../../../js/ajax/add-comparison-basket.php" method="post">
+                      <input type="hidden" name="item_id" value="id_01">
+                      <div data-step="1" class="counter">
+                        <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                      </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                      <div class="popup"><span>Добавлено</span></div>
+                    </form>
+                  </div>
+                </li>
+                <li class="comparison-list__el list-type"><a href="" data-id="item_01" class="remove-comparison js--remove-comparison"></a>
+                  <div class="comparison-list__el-img"><img src="../../../img/img--material-2.jpg" alt /></div>
+                  <div class="comparison-list__el__info"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-art">Артикул 78658632</span><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span></div>
+                  <div class="comparison-list__el--form">
+                    <form action="../../../js/ajax/add-comparison-basket.php" method="post">
+                      <input type="hidden" name="item_id" value="id_01">
+                      <div data-step="1" class="counter">
+                        <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                      </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                      <div class="popup"><span>Добавлено</span></div>
+                    </form>
+                  </div>
+                </li>
+                <li class="comparison-list__el list-type"><a href="" data-id="item_01" class="remove-comparison js--remove-comparison"></a>
+                  <div class="comparison-list__el-img"><img src="../../../img/img--material-2.jpg" alt /></div>
+                  <div class="comparison-list__el__info"><a href="" class="comparison-list__el__info-name">Американский хлопок</a><span href="" class="comparison-list__el__info-art">Артикул 78658632</span><span href="" class="comparison-list__el__info-price">1200<i>o</i></span><span href="" class="comparison-list__el__info-measure">м<i>2</i></span></div>
+                  <div class="comparison-list__el--form">
+                    <form action="../../../js/ajax/add-comparison-basket.php" method="post">
+                      <input type="hidden" name="item_id" value="id_01">
+                      <div data-step="1" class="counter">
+                        <input type="text" name="item_amount" maxlength="3" class="inp input-number"><a href="" class="counter-add js--counter--button js-add"></a><a href="" class="counter-remove js--counter--button js-remove"></a>
+                      </div><a data-id="item_01" class="btn-green js--add-comparison-basket">В корзину</a>
+                      <div class="popup"><span>Добавлено</span></div>
+                    </form>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="comprasion-empty hidden-block">
+              <p>Ваш список сравнения пуст.</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">$(function(){$.pixlayout({src: "../../../img/temp/comparison.jpg",opacity: 0.5,top: 2,left: 107,center: false,clip: true,show: false});});</script>
+      </div>
+      <div class="psevdofooter"></div>
+      <footer class="footer">
+        <div class="justifyed">
+          <div class="footer--catalog"><span>Каталог</span>
+            <ul>
+              <li><a href="">Ткани</a></li>
+              <li><a href="">Фурнитура</a></li>
+              <li><a href="">Ткани оптом</a></li>
+              <li><a href="">Журналы и выкройки</a></li>
+            </ul>
+          </div>
+          <div class="footer--info"><span>Информация</span>
+            <ul>
+              <li><a href="">Пользовательское соглашение</a></li>
+              <li><a href="">О нас</a></li>
+              <li><a href="">Политика конфеденциальности</a></li>
+              <li><a href="">Блог</a></li>
+              <li><a href="">Доставка и оплата</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__cotacts"><a href="tel:88007777131" class="footer__cotacts-phone">+7 800 777 71 31</a><a href="tel:84957717131" class="footer__cotacts-phone">+7 495 771 71 31</a>
+            <div class="footer__cotacts--social"><span>Присоединяйтесь к нам</span>
+              <ul>
+                <li><a href="" class="social-fb"></a></li>
+                <li><a href="" class="social-tw"></a></li>
+                <li><a href="" class="social-vk"></a></li>
+              </ul>
+            </div><span class="footer__cotacts--copyright">© 2015 ООО «Модные Вместе» Все права защищены</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

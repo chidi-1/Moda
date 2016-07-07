@@ -1,0 +1,284 @@
+.page-about
+  padding 0 20px
+
+  p
+    font-weight 300
+    font-size 14px
+    line-height 17px
+    margin-bottom 16px
+
+    strong
+      font-weight 500
+
+  .about--info
+    display inline-block
+    vertical-align top
+    width 680px
+
+  .about__review-top
+    display inline-block
+    vertical-align top
+    margin-left 33px
+    width 317px
+    text-align right
+
+    &--text
+      display block
+      padding 17px 10px 5px 18px
+      border 1px dashed #b3ccb1
+      text-align left
+      border-radius 15px
+      position relative
+      background #ffffff
+
+      p
+        font-size 12px
+        line-height 14px
+        margin-bottom 12px
+
+    a
+      display inline-block
+      vertical-align top
+      font-size 13px
+      color $cGreen
+      font-weight 300
+      text-decoration underline
+      margin-top 15px
+
+    a:hover
+      text-decoration none
+
+    .about__review-top--text:after
+      position absolute
+      content ''
+      width 38px
+      height 17px
+      background url(../img/icon--triangle.png) no-repeat 0 0
+      bottom -17px
+      left 36px
+
+  .section-text
+    margin-bottom 20px
+    padding 0 0
+
+  .about--slider
+    display block
+    margin 0 auto 37px
+    width 1036px
+
+    .fotorama__wrap
+      width 1036px !important
+      height 520px !important
+
+      .fotorama__stage
+        height 410px !important
+        background url("../img/bg__about-slider-lr.jpg") repeat-y 0 0
+
+      
+      .fotorama__stage__shaft
+        padding 7px 8px
+        height 410px !important
+
+        .fotorama__stage__frame
+          display block
+
+          img
+            width 1012px !important
+            height 390px !important
+            border 3px solid #ffffff !important
+            border-radius 3px !important
+            margin-top 7px
+            margin-left 8px
+
+    .fotorama__nav-wrap
+      margin-top 8px
+      background url("../img/bg__about-slider-min.jpg") repeat-y 0 0
+      padding 5px 0
+
+      .fotorama__thumb-border
+        display none
+
+      .fotorama__nav__frame--thumb
+        margin 0 6px
+        height 91px
+
+        .fotorama__thumb
+          height 85px !important
+          border 3px solid #ffffff
+
+          img
+            height 85px !important
+            width auto !important
+
+      .fotorama__nav__frame--thumb.fotorama__active
+        .fotorama__thumb
+          border 3px solid #00afea
+
+    .fotorama__caption
+      left auto
+      bottom 51px
+      right 40px
+      font-family $fLobster
+      font-size 18px
+      color #ffffff
+      background transparent
+      line-height 22px
+      text-align right
+
+      .fotorama__caption__wrap
+        background transparent
+
+      strong
+        display block
+        text-align right
+        font-size 24px
+
+  .section-reviews
+    padding-top 45px
+
+    .reviews-list
+      display block
+      margin-top -6px
+
+      &__el
+        padding-top 26px
+        padding-bottom 7px
+        position relative
+
+        &--header
+          padding-bottom 5px
+
+          time,
+          span
+            color $cGray-l
+            font-size 12px
+            padding-right 5px
+
+
+        &--content
+          p
+            font-size 12px
+            line-height 15px
+            color $cGray
+
+            a
+              font-size 12px
+              line-height 15px
+              color $cGreen
+              text-decoration underline
+              display inline-block
+              vertical-align top
+              margin-left 5px
+
+            a:hover
+              text-decoration none
+
+      &__el:after
+        position absolute
+        content ''
+        border-top 1px solid #ededed
+        width 320px
+        left 0
+        bottom 0
+
+  .section-reviews__links
+    text-align center
+    padding-top 20px
+    position relative
+    height 41px
+
+    a
+      display inline-block
+      vertical-align middle
+      margin 0 20px
+
+      span
+        font-size 12px
+        color $cGreen
+        text-decoration none
+        line-height 14px
+        vertical-align middle
+
+      i
+        font-family $fIcons
+        font-size 16px
+        vertical-align middle
+        color $cGreen
+        text-decoration none
+        margin-right 5px
+        line-height 14px
+
+      img
+        display inline-block
+        vertical-align middle
+        margin-right 5px
+        margin-top 0
+
+    a:hover
+      span
+        color $cGreen-d
+
+    .popup-review
+      position absolute
+      padding 29px 23px 25px
+      background #ffffff
+      border 1px dashed $cGray-l
+      left 341px
+      bottom 63px
+      border-radius 9px
+      width 468px
+      display none
+
+      .inp
+        display inline-block
+        vertical-align top
+        border 1px solid $cGray-l
+        width 227px
+        height 36px
+        border-radius 5px
+
+
+      .inp:required
+        border 1px solid #82ba6c
+        color #82ba6c
+
+      .inp:invalid
+        border 1px solid $cGray-l
+        color $cGray
+
+      label
+        margin-top 20px
+        display block
+
+        textarea
+          display block
+          border 1px solid $cGray-l
+          width 466px
+          padding 10px 20px
+          border-radius 5px
+          font-size 13px
+          height 120px
+
+        textarea:required
+          border 1px solid #82ba6c
+          color #82ba6c
+
+        textarea:invalid
+          border 1px solid #cccccc
+          color $cGray
+
+        textarea.error
+          border 1px solid #dc493c
+
+
+
+      label.result
+        text-align right
+
+        .btn-green
+          text-transform none
+          width 227px
+          margin-right 0
+
+    .popup-review.popup-review-open
+      display block

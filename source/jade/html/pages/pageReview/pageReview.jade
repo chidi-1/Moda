@@ -1,0 +1,62 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .page-review
+
+        ul.breadcrumbs
+            li
+                a(href="") Главная страница
+            li
+                a(href="") О нас
+            li
+                span Отзывы
+
+        .justifyed
+
+            .review--content.load-container
+                h1 Отзывы
+
+                ul.reviews-list
+                    li.reviews-list__el
+                        .reviews-list__el--header
+                            time 12.02.2015
+                            span Лариса Мальцева
+                        .reviews-list__el--content
+                            p  Сайт замечательный, качество и&nbsp;цветовая гамма заказанных тканей оправдали все мой ожидания. Делала заказ первый раз,перед заказом долго сомневалась и&nbsp;в&nbsp;выборе, и&nbsp;в&nbsp;способе доставки, но&nbsp;оказалось, что все намного проще и&nbsp;удобнее, чем думала! Один из&nbsp;пунктов выдачи PickPoint оказался рядом с&nbsp;моим домом))). Оплачивала после получения заказа. Все очень быстро и&nbsp;максимально удобно! Спасибо Вам! В&nbsp;будущем буду пользоваться услугами Вашего интернет-магазина обязательно!!! Всех в&nbsp;наступающим Новым годом! (P.S. В&nbsp;нашем городе такого ассортимента тканей просто нет, да&nbsp;и&nbsp;цены кусаются очень...)
+
+                    li.reviews-list__el
+                        .reviews-list__el--header
+                            time 12.02.2015
+                            span Лариса Мальцева
+                        .reviews-list__el--content
+                            p  Сайт замечательный, качество и&nbsp;цветовая гамма заказанных тканей оправдали все мой ожидания. Делала заказ первый раз,перед заказом долго сомневалась и&nbsp;в&nbsp;выборе, и&nbsp;в&nbsp;способе доставки, но&nbsp;оказалось, что все намного проще и&nbsp;удобнее, чем думала! Один из&nbsp;пунктов выдачи PickPoint оказался рядом с&nbsp;моим домом))). Оплачивала после получения заказа. Все очень быстро и&nbsp;максимально удобно! Спасибо Вам! В&nbsp;будущем буду пользоваться услугами Вашего интернет-магазина обязательно!!! Всех в&nbsp;наступающим Новым годом! (P.S. В&nbsp;нашем городе такого ассортимента тканей просто нет, да&nbsp;и&nbsp;цены кусаются очень...)
+
+                    li.reviews-list__el
+                        .reviews-list__el--header
+                            time 12.02.2015
+                            span Лариса Мальцева
+                        .reviews-list__el--content
+                            p  Сайт замечательный, качество и&nbsp;цветовая гамма заказанных тканей оправдали все мой ожидания. Делала заказ первый раз,перед заказом долго сомневалась и&nbsp;в&nbsp;выборе, и&nbsp;в&nbsp;способе доставки, но&nbsp;оказалось, что все намного проще и&nbsp;удобнее, чем думала! Один из&nbsp;пунктов выдачи PickPoint оказался рядом с&nbsp;моим домом))). Оплачивала после получения заказа. Все очень быстро и&nbsp;максимально удобно! Спасибо Вам! В&nbsp;будущем буду пользоваться услугами Вашего интернет-магазина обязательно!!! Всех в&nbsp;наступающим Новым годом! (P.S. В&nbsp;нашем городе такого ассортимента тканей просто нет, да&nbsp;и&nbsp;цены кусаются очень...)
+                            p.answer Ответ казалось, что все намного проще и удобнее, чем думала! Один из пунктов выдачи PickPoint оказался рядом с моим домом))). Оплачивала после получения заказа. Все очень быстро и максимально удобно! Спасибо Вам! В будущем буду пользоваться услугами Вашего интернет-магазина обязательно!!! Всех в наступающим Новым годом! (P.S. В нашем городе такого ассортимента тканей просто нет, да и цены кусаются очень...)
+
+                .reviews__more
+                    a(href="" data-url="../../../js/ajax/show-more-review.php" data-metod="post").js--show-more Показать еще 20 (Осталось 241)
+
+
+            .review--form
+                h2.bg--green-right Добавить отзыв
+
+                form(action="../../../js/ajax/review.php" method="post").main-form.review-form
+                    input(type="text" name="name" placeholder="Ваше имя" required).inp.required
+                    input(type="text" name="mail" placeholder="Ваш e-mail адрес" required).inp.required.input-mail
+                    textarea(name="review" placeholder="Текст отзыва" required).required
+                    a(href="").btn-green.js--form-submit
+                        span Добавить отзыв
+
+                    .hidden-block
+                        a(href="../pagePopup/review-ok.html" class="fancybox.ajax").fancy.hidden-block.js--review-ok
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/reviews.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});

@@ -1,0 +1,62 @@
+.inp
+  box-sizing border-box
+  background #ffffff
+  box-shadow none
+  outline none
+  height 38px
+  display block
+  font-size 13px
+  border-radius 5px
+  -webkit-appearance none
+  transition-property background-color border-color
+  transition-duration 0.4s
+  padding-left 20px
+  width 100%
+
+  &::placeholder
+    opacity 1
+    color $cGray
+
+.inp:required
+  border 1px solid #82ba6c !important
+  color #82ba6c
+
+.inp:required + .show-pass
+  color #82ba6c
+
+.inp:invalid
+  border 1px solid #cccccc  !important
+  color $cGray
+
+.inp:invalid + .show-pass
+  color $cGray
+
+.inp.error
+  border 1px solid #dc493c !important
+  color #dc493c !important
+
+.inp:focus
+  &::placeholder
+    opacity 0
+
+textarea 
+  box-sizing border-box
+  background transparent
+  border 2px solid #dcdcdc
+  border-width 0 0 2px 0
+  box-shadow none
+  border-radius 0px
+  outline none
+  width 100%
+  height 110px
+  display block
+  padding 4px 0
+  font-size 17px
+  color $cBlack
+  -webkit-appearance none
+  resize none
+
+  &::placeholder
+    opacity 1
+    color $cGray
+

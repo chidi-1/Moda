@@ -1,0 +1,265 @@
+.header
+  padding-bottom 36px
+  position relative
+  z-index 15
+
+  .scroll-top
+    position fixed
+    width 60px
+    height 62px
+    background url(../img/img--top.png) no-repeat 0 0
+    bottom 5px
+    left 50%
+    margin-left 620px
+    z-index 20px
+    cursor pointer
+    color #ffffff
+    font-weight 700
+    text-align center
+    text-transform uppercase
+    font-size 14px
+    padding-top 35px
+    display none
+
+  .scroll-top.visible
+    display block
+
+  &-logo
+    width 456px
+    margin-left 10px
+    margin-top -7px
+
+    img
+      display block
+      width 430px
+      height 143px
+
+    span
+      display block
+      font-family $fAppettite
+      color $cGreen
+      margin-left 6px
+      margin-top -4px
+
+  &__contacts
+    text-align right
+    width 265px
+    margin-left -32px
+
+    div
+      margin-top 20px
+
+      a,
+      span
+        display block
+
+
+      span
+        font-size 12px
+        color $cGray-l
+
+    &-phone
+      font-size 30px
+      font-weight 500
+      line-height 22px
+      margin-right -5px
+
+    &-info
+      color $cRed
+      font-weight 300%
+      text-decoration underline
+
+    &-info:hover
+      text-decoration none
+
+  &__links
+    width 340px;
+    text-align right
+    padding-top 19px
+    padding-right 7px
+
+    a
+      display inline-block
+      vertical-align top
+      margin-bottom 31px
+
+      img
+        display inline-block
+        vertical-align middle
+        margin-right 9px
+        margin-top 2px
+
+      span
+        color $cRed
+        border-bottom 1px dashed $cRed
+        display inline-block
+        vertical-align middle
+        font-weight 300
+        font-size 20px
+        line-height 22px
+
+      i
+        display inline-block
+        vertical-align middle
+        width 24px
+        height 23px
+        background $cRed
+        border-radius 5px
+        margin-left 8px
+        text-align center
+        line-height 25px
+        color #fff
+        font-size 12px
+        font-weight 300
+        font-style normal
+        margin-top 4px
+
+    a.empty
+      i
+        display none
+
+    &-reg
+      margin-right 9px
+
+    &-ent
+      margin-right 39px
+
+    &-comp
+      margin-right 19px
+
+
+nav
+  display block
+  background url("../img/bg__menu.png") no-repeat 50% 0
+  width 1134px
+  margin-left -30px
+  height 106px
+  position relative
+  z-index 15
+  margin-bottom -2px
+
+  .main-nav
+    display inline-block
+    vertical-align top
+    padding-top 21px
+    padding-left 22px
+
+    &__el
+      display inline-block
+      vertical-align top
+
+      a
+        font-family $fLobster
+        font-size 22px
+        color #fff
+
+    &__el-red
+      margin 0 16px
+      a
+        text-shadow 0 2px 0 rgba(179, 113, 102, 0.7)
+    &__el-green
+      margin 0 17px
+      a
+        text-shadow 0 2px 0 rgba(136, 164, 131, 0.7)
+    li:nth-child(5)
+      margin-left 39px
+
+  .search
+    display inline-block
+    vertical-align top
+    top 15px
+    right 0
+    position absolute
+
+    &--icon
+      display inline-block
+      vertical-align top
+      margin-top 7px
+      margin-right 34px
+
+      i
+        font-size 20px
+        color #fff
+        text-shadow 0 2px 0 rgba(136, 164, 131, 0.7)
+        font-family $fIcons
+        font-style normal
+
+    form
+      position absolute
+      z-index 20
+      width 0
+      transition width 0.3s
+      -webkit-transition width 0.3s
+      top 0
+      right 20px
+      overflow hidden
+
+      .inp
+        display block
+        height 35px
+        width 446px
+        padding-left 23px
+        padding-right 50px
+        background #fff
+        border-radius 5px
+        border none
+        outline none
+        top 0
+        right 0
+
+      label
+        cursor pointer
+        position absolute
+        top 6px
+        right 15px
+
+        input
+          background none
+          outline none
+          border none
+
+      label:after
+        content "\f002"
+        font-family $fIcons
+        font-style normal
+        color $cGreen
+        font-size 20px
+
+
+  .search.search-open
+    form
+      width 446px
+
+
+ul.breadcrumbs
+  display block
+  background none
+  margin-top -8px
+  margin-bottom 12px
+
+  li
+    display inline-block
+    position relative
+    margin-right 11px
+
+    a
+      font-size 12px
+      color $cGreen-l
+      text-decoration underline
+      font-weight 300
+
+    span
+      font-size 12px
+      color $cGray-l
+      font-weight 300
+
+  li:after
+    position absolute
+    content '>'
+    right -9px
+    top 3px
+    color $cGray-l
+    font-size 12px
+
+  li:last-child:after
+    content ''

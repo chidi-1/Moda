@@ -1,0 +1,153 @@
+a,
+span,
+li,
+button,
+input,
+textarea,
+p {
+  font: 15px 'Roboto', sans-serif;
+  color: $cBlack;
+  line-height: normal;
+  -webkit-text-size-adjust: 100%;
+  text-decoration: none;
+  outline: none;
+}
+i {
+  font-style: normal;
+}
+a {
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+h1 {
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 12px;
+  font-weight: 300;
+  font-family: $fLobster;
+  display: block;
+  text-align: left;
+  color: $cGreen-l;
+}
+h2 {
+  font-size: 30px;
+  line-height: 38px;
+  font-family: $fLobster;
+  color: $cGreen-l;
+}
+h2.bg--green {
+  background: url("../img/bg__title-gr.png") no-repeat 0 0;
+  width: 1206px;
+  height: 94px;
+  text-align: center;
+  display: block;
+  margin-left: -66px;
+  line-height: 46px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+  color: #fff;
+}
+h2.bg--green-left {
+  background: url("../img/bg__title-gr-left.png") no-repeat 0 0;
+  width: 430px;
+  height: 75px;
+  text-align: center;
+  display: block;
+  margin-left: -86px;
+  line-height: 46px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+  color: #fff;
+}
+h2.bg--green-right {
+  background: url("../img/bg__title-gr-right.png") no-repeat 0 0;
+  width: 430px;
+  height: 75px;
+  text-align: center;
+  display: block;
+  margin-right: -66px;
+  line-height: 46px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+h2.bg--red {
+  background: url("../img/bg__title-pn.png") no-repeat 0 0;
+  width: 1206px;
+  height: 94px;
+  text-align: center;
+  display: block;
+  margin-left: -76px;
+  line-height: 46px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+h3 {
+  font-family: $fLobster;
+  color: $cGreen-l;
+  font-size: 24px;
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+h4 {
+  font-family: $fLobster;
+  color: $cGreen-l;
+  font-size: 36px;
+  display: block;
+  text-align: left;
+}
+h5 {
+  font-family: $fLobster;
+  color: #666;
+  font-size: 26px;
+  display: block;
+  text-align: center;
+}
+h5 strong {
+  color: $cGreen-l;
+}
+h6 {
+  display: block;
+  text-align: left;
+  font-weight: 300;
+  color: #333;
+  font-size: 30px;
+}
+p {
+  font-size: 14px;
+}
+.rubl {
+  font-family: 'als_rublregular';
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-folder-open-alt:after {
+  content: '\f115';
+}
+.icon-star-empty:after {
+  content: '\f006';
+}
+.icon-search:after {
+  content: '\f002';
+}
+.icon-eye-open:after {
+  content: '\f06e';
+}
+.icon-eye-close:after {
+  content: '\f070';
+}
+.icon-shopping-cart:after {
+  content: '\f07a';
+}
+.icon-exchange:after {
+  content: '\f0ec';
+}
+.icon-comment-alt:after {
+  content: '\f0e5';
+}
+.icon-pencil:after {
+  content: '\f040';
+}

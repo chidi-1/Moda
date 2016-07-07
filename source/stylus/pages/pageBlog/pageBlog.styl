@@ -1,0 +1,165 @@
+.page-blog
+  padding 0 20px
+  position relative
+
+  .subscribe
+    position absolute
+    top 7px
+    right 15px
+
+    &__link
+      display block
+      cursor pointer
+
+      span
+        display inline-block
+        vertical-align middle
+        font-family $fLobster
+        color $cPink
+        font-size 18px
+        border-bottom 1px dashed $cPink
+
+      img
+        display inline-block
+        vertical-align middle
+        width 58px
+        height 46px
+        margin-left 10px
+
+    .subscribe-popup
+      display none
+      position absolute
+      padding 24px 20px
+      background #ffffff
+      width 266px
+      bottom 69px
+      right 0
+      z-index 35
+      border-radius 10px
+      box-shadow  0 0 10px rgba(0,0,0,0.3)
+
+      .subscribe-popup-close
+        position absolute
+        z-index 40
+        cursor pointer
+        width 24px
+        height 24px
+        background url("../img/icon--close.png") no-repeat 0 0
+        top -12px
+        right -12px
+        background-size 100% 100%
+
+      h5
+        color $cPink
+        padding-bottom 10px
+        font-size 24px
+
+      p
+        display block
+        text-align center
+        font-size 10px
+        color #aaaaaa
+        padding-bottom 15px
+
+      form
+        .inp
+          width 266px
+          border 2px solid #999999
+          border-radius 7px
+          margin-bottom 19px
+
+        .inp.error
+          border 2px solid $cRed
+
+        .btn-blue
+          width 268px
+          font-family $fLobster
+          text-transform none
+          font-size 18px
+
+    .subscribe-popup:before,
+    .subscribe-popup:after
+      position absolute
+      content ''
+      left 0
+      right 0
+      height 6px
+      background url("../img/border--letter.jpg") repeat-x 0 0
+
+    .subscribe-popup:before
+      top 0
+      border-radius 10px 10px 0 0
+
+    .subscribe-popup:after
+      bottom 0
+      border-radius  0 0 10px 10px
+
+    .subscribe-popup.subscribe-popup-open
+      display block
+
+  .tabs__caption
+    margin-top 28px
+    margin-bottom 17px
+
+    li
+      margin-right 19px
+      font-size 16px
+      border-bottom 1px dashed $cGreen
+      color $cGreen
+      cursor pointer
+
+    li:hover
+      border-bottom 1px dashed transparent
+
+    li.active
+      border-bottom none
+      color $cOrange
+      cursor default
+
+  .tabs__content
+    display none
+
+    .blog-list
+      display block
+
+      &__el
+        display block
+        border-bottom  1px dashed #e1e1e1
+        padding-bottom 21px
+        padding-top 20px
+
+        h5
+          text-align left
+          padding-bottom 9px
+
+        p
+          padding-bottom 19px
+
+        &--links
+          display block
+          padding-left 3px
+
+          a
+            display inline-block
+            vertical-align top
+            margin-right 27px
+            color $cGreen
+            font-size 12px
+
+            img
+              margin-right 5px
+
+          a:hover
+            color $cGreen-d
+
+          time
+            display inline-block
+            vertical-align top
+            font-size 12px
+            color #cccccc
+
+      &__el:last-child
+        border-bottom  none
+
+  .tabs__content.active
+    display block

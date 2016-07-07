@@ -1,0 +1,404 @@
+.page-privat
+  padding 0 20px
+
+  .tabs
+    padding-bottom 30px
+
+  .bonus__status--current
+    display inline-block
+    vertical-align top
+
+  .bonus__status--link
+    margin-left 7px
+    margin-top 3px
+    font-size 14px
+    display inline-block
+    vertical-align top
+    color $cRed
+    border-bottom 1px dotted $cRed
+
+  .tabs__caption
+    margin-top 28px
+    margin-bottom 26px
+
+    li
+      margin-right 29px
+      font-size 18px
+      border-bottom 1px dashed $cGreen
+      color $cGreen
+      cursor pointer
+
+    li.active
+      border-bottom none
+      color #d37a37
+      cursor default
+
+  .tabs__content
+    display none
+
+  .tabs__content.active
+    display block
+
+  .order-table
+    width 100%
+
+    tr:nth-child(1)
+      height 50px
+
+    tr
+      height 48px
+
+      .table-date
+        width 97px
+        text-align center
+      .table-number
+        width 74px
+        text-align center
+      .table-list
+        width 252px
+
+        a
+          display inline-block
+          vertical-align middle
+          font-family $fIcons
+          float right
+          text-decoration none
+
+      .table-summ
+        width 70px
+        text-align center
+      .table-status
+        width 146px
+        text-align justify
+      .table-delivery
+        width 198px
+      .table-payment
+        width 185px
+
+      th:nth-child(1)
+        border-left 1px solid #afcda9
+
+      th
+        vertical-align middle
+        background #afcda9
+        height 48px
+        border-top 1px solid #afcda9
+        border-bottom 1px solid #afcda9
+        border-left 1px solid #fff
+        border-right 1px solid #afcda9
+        font-size 13px
+        color #ffffff
+        text-align center
+        font-weight 500
+
+      td::nth-child(1)
+        border-left 1px dashed #afcda9
+      td:last-child
+        border-right 1px dashed #afcda9
+
+      td
+        vertical-align middle
+        min-height 48px
+        border-bottom 1px dashed #e1e1e1
+        border-left 1px solid #e1e1e1
+        text-align left
+        font-size 11px
+
+        a
+          font-size 11px
+          color $cRed
+          text-decoration underline
+
+        ul
+          display inline-block
+          vertical-align middle
+
+          li
+            display block
+            font-size 11px
+
+        i
+          float right
+          width 14px
+          height 13px
+          border-radius 13px
+          line-height 15px
+          text-align center
+          color #ffffff
+          font-size 10px
+
+      td.table-list
+        width 232px
+        padding 0 10px
+      td.table-delivery
+        width 188px
+        padding-left 10px
+      td.table-payment
+        width 175px
+        padding-left 10px
+      td.table-status
+        width 126px
+        padding 0 10px
+
+      td.c_gray
+        color #9e9e9e
+        i
+          background #9e9e9e
+
+      td.c_pink
+        color $cPink
+        i
+          background $cPink
+
+      td.c_green
+        color #afcda9
+        i
+          background #afcda9
+
+    tr.disabled
+
+      td
+        background #fffbed
+        color #cccccc
+
+        a, i, li
+          color #cccccc
+
+  .privat__more
+    display block
+    text-align center
+    padding-top 30px
+
+    a
+      color #679a63
+      font-size 16px
+      border-bottom 1px dashed #679a63
+
+  .delivery-form
+    h5
+      text-align left
+      color $cGreen
+      padding-bottom 0
+      padding-top 9px
+      font-size 22px
+
+  .filter-wrap
+    display block
+
+    .filter
+      display inline-block
+      vertical-align top
+      width 865px
+      padding-right 0
+      border-radius 10px
+      white-space normal
+      margin-top 27px
+      height auto
+      margin-bottom 20px
+
+      .form-col__el.form-col__el--button
+        text-align right
+        padding-bottom 10px
+
+        .btn-green
+          margin-right 28px
+          margin-top 2px
+          border-radius 5px
+          width 148px
+          font-size 18px
+
+      .form-col__el
+        display block
+        padding-top 2px
+
+        label
+          display inline-block
+          vertical-align top
+          margin-right 17px
+          position relative
+
+          .inp
+            border-radius 5px
+            height 30px
+            padding-left 30px
+            width 175px
+            font-size 12px
+            border 1px solid #cccccc
+
+          .inp.inp-city
+            padding-left 10px
+
+          .inp.inp-street
+            width 205px
+            padding-left 10px
+
+          .inp.inp-house
+            width 55px
+            padding-left 10px
+
+          .inp.inp-section
+            width 60px
+            padding-left 10px
+
+          .inp.inp-flat
+            width 55px
+            padding-left 10px
+
+          .jq-selectbox__select
+            width 183px
+
+        label.inp-name:before
+          position absolute
+          content ''
+          width 12px
+          height 13px
+          background url("../img/icon--person.png") no-repeat 0 0
+          bottom 9px
+          left 12px
+
+        label.inp-phone:before
+          position absolute
+          content ''
+          width 13px
+          height 13px
+          background url("../img/icon--phone.png") no-repeat 0 0
+          bottom 9px
+          left 12px
+
+        label.require:after
+          position absolute
+          content '*'
+          color #FF0000
+          font-family "Arial", sans-serif
+          bottom 4px
+          right 11px
+
+    .form-comment
+      display inline-block
+      vertical-align top
+      white-space normal
+      margin-left 27px
+      margin-top 27px
+      line-height 15px
+      width 100px
+      color #cecece
+      font-size 12px
+      font-family "Arial", sans-serif
+
+  .adress-add
+    display block
+
+    a
+      color $cRed
+      font-size 14px
+
+      span
+        color $cRed
+        font-size 14px
+        border-bottom  1px dotted $cRed
+        display inline-block
+        vertical-align top
+        margin-left 3px
+
+  .adress-submit
+    margin-top 50px
+
+    .btn-green
+      border-radius 5px
+      width 190px
+      height 50px
+      line-height 56px
+      font-size 18px
+
+  .pass-form
+    position relative
+
+    h5
+      text-align left
+      color $cGreen
+      padding-top 7px
+      font-size 24px
+      padding-bottom 27px
+
+    .inp
+      display block
+      margin-bottom 16px
+      border 1px solid #999999
+      color #999999
+      width 300px
+      height 40px
+      line-height 40px
+      padding-left 20px
+      border-radius 5px
+
+    .error-text
+      position absolute
+      left 0
+      bottom 58px
+      color $cRed
+
+    .btn-green
+      border-radius 5px
+      width 190px
+      height 50px
+      line-height 56px
+      font-size 18px
+      margin-top 17px
+
+  .new-mail-form
+    position relative
+
+    h5
+      text-align left
+      color $cGreen
+      padding-top 7px
+      font-size 24px
+      padding-bottom 27px
+
+
+    .inp
+      display block
+      margin-bottom 16px
+      border 1px solid #999999
+      color #999999
+      width 300px
+      height 40px
+      line-height 40px
+      padding-left 30px
+      border-radius 5px
+
+    .error-text
+      position absolute
+      left 0
+      bottom 58px
+      color $cRed
+
+    .btn-green
+      border-radius 5px
+      width 190px
+      height 50px
+      line-height 56px
+      font-size 18px
+      margin-top 17px
+
+    label
+      position relative
+      display block
+      width 300px
+
+    label.inp-mail:before
+      position absolute
+      content ''
+      width 20px
+      height 13px
+      background url("../img/icon--mail.png") no-repeat 0 0
+      bottom 12px
+      left 7px
+
+    label.require:after
+      position absolute
+      content '*'
+      color #FF0000
+      font-family "Arial", sans-serif
+      bottom 4px
+      right 11px

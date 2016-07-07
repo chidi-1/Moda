@@ -1,0 +1,506 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+
+    section.section-text.index--about
+        h3 О нас
+        p Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности играет важную роль в формировании дальнейших направлений развития. Не следует, однако забывать, что укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития.
+            a Подробее
+
+    section.section-commercial
+        .index-banner
+            div
+                a(href="")
+                    img(src="../../../img/img--banner-l.jpg" alt /)
+            div
+                a(href="")
+                    img(src="../../../img/img--resh.jpg" alt /)
+            div
+                a(href="")
+                    img(src="../../../img/img--banner-l.jpg" alt /)
+
+        .index--solution
+            img(src="../../../img/img--resh.jpg" alt /)
+
+            .index--solution-content
+                h3 Готовые решения
+                p Как было показано выше, прямое восхождение постоянно. Апогей притягивает Млечный Путь.
+                p Газопылевое облако, по определению, оценивает экваториальный болид
+
+    section.section-novelty
+        h2.bg--green Новые ткани
+        ul.item-list
+            li.item-list__el
+                .visible
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-1.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Джерси
+                        span.item-list__el__ifno-price 12
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+
+                .hidden
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-1.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Джерси
+                        span.item-list__el__ifno-price 12
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                    .item-list__el__buttons
+                        form(action="../../../js/ajax/add-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="item_01")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a.btn-green.js--add-basket В корзину
+                            .popup
+                                span Добавлено
+                                a Перейти в корзину
+                    .item-list__el__links
+                        a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                        a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_01").btn-green.js--add-compare Сравнить
+
+
+            li.item-list__el
+                .visible
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-2.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Подкладочная ткань
+                        span.item-list__el__ifno-price 350
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+
+                .hidden
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-2.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Подкладочная ткань
+                        span.item-list__el__ifno-price 350
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                    .item-list__el__buttons
+                        form(action="../../../js/ajax/add-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="item_02")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a.btn-green.js--add-basket В корзину
+                            .popup
+                                span Добавлено
+                                a Перейти в корзину
+                    .item-list__el__links
+                        a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                        a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_02").btn-green.js--add-compare Сравнить
+
+            li.item-list__el
+                .visible
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-1.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Трикотаж заморский
+                        span.item-list__el__ifno-price 900
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                .hidden
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-1.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Трикотаж заморский
+                        span.item-list__el__ifno-price 900
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                    .item-list__el__buttons
+                        form(action="../../../js/ajax/add-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="item_03")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a.btn-green.js--add-basket В корзину
+                            .popup
+                                span Добавлено
+                                a Перейти в корзину
+                    .item-list__el__links
+                        a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                        a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_03").btn-green.js--add-compare Сравнить
+
+            li.item-list__el
+                .visible
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-2.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Американский хлопок
+                        span.item-list__el__ifno-price 1200
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                .hidden
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-2.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Американский хлопок
+                        span.item-list__el__ifno-price 1200
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                    .item-list__el__buttons
+                        form(action="../../../js/ajax/add-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="item_04")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a.btn-green.js--add-basket В корзину
+                            .popup
+                                span Добавлено
+                                a Перейти в корзину
+                    .item-list__el__links
+                        a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                        a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_04").btn-green.js--add-compare Сравнить
+
+        a.btn--border-green Посмотреть все новинки
+
+    section.section-discount
+        h2.bg--red Ткани со скидкой
+        ul.item-list
+            li.item-list__el
+                .visible
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-1.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Джерси
+                        span.item-list__el__ifno-old-price 15
+                            i o
+                        span.item-list__el__ifno-price 12
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                .hidden
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-1.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Джерси
+                        span.item-list__el__ifno-old-price 15
+                            i o
+                        span.item-list__el__ifno-price 12
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                    .item-list__el__buttons
+                        form(action="../../../js/ajax/add-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="item_01")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a.btn-green.js--add-basket В корзину
+                            .popup
+                                span Добавлено
+                                a Перейти в корзину
+                    .item-list__el__links
+                        a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                        a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_01").btn-green.js--add-compare Сравнить
+            li.item-list__el
+                .visible
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-2.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Подкладочная ткань
+                        span.item-list__el__ifno-old-price 15
+                            i o
+                        span.item-list__el__ifno-price 350
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                .hidden
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-2.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Подкладочная ткань
+                        span.item-list__el__ifno-old-price 15
+                            i o
+                        span.item-list__el__ifno-price 350
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                    .item-list__el__buttons
+                        form(action="../../../js/ajax/add-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="item_02")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a.btn-green.js--add-basket В корзину
+                            .popup
+                                span Добавлено
+                                a Перейти в корзину
+                    .item-list__el__links
+                        a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                        a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_02").btn-green.js--add-compare Сравнить
+            li.item-list__el
+                .visible
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-1.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Трикотаж заморский
+                        span.item-list__el__ifno-old-price 15
+                            i o
+                        span.item-list__el__ifno-price 900
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                .hidden
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-1.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Трикотаж заморский
+                        span.item-list__el__ifno-old-price 15
+                            i o
+                        span.item-list__el__ifno-price 900
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                    .item-list__el__buttons
+                        form(action="../../../js/ajax/add-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="item_03")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a.btn-green.js--add-basket В корзину
+                            .popup
+                                span Добавлено
+                                a Перейти в корзину
+                    .item-list__el__links
+                        a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                        a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_03").btn-green.js--add-compare Сравнить
+            li.item-list__el
+                .visible
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-2.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Американский хлопок
+                        span.item-list__el__ifno-old-price 15
+                            i o
+                        span.item-list__el__ifno-price 1200
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                .hidden
+                    .item-list__el--img
+                        a(href="")
+                            img(src="../../../img/img--material-2.jpg" alt /)
+                    .item-list__el__ifno
+                        a.item-list__el__ifno-title Американский хлопок
+                        span.item-list__el__ifno-old-price 15
+                            i o
+                        span.item-list__el__ifno-price 1200
+                            i o
+                        span.item-list__el__ifno-measure м
+                            i 2
+                    .item-list__el__buttons
+                        form(action="../../../js/ajax/add-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="item_04")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a.btn-green.js--add-basket В корзину
+                            .popup
+                                span Добавлено
+                                a Перейти в корзину
+                    .item-list__el__links
+                        a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                        a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_04").btn-green.js--add-compare Сравнить
+
+        a.btn--border-red Посмотреть все скидки
+
+    section.section-community
+        h1 Наше сообщество
+
+        .tabs
+            ul.tabs__caption
+                li.active Конкурсы
+                li Работа у нас
+                li Статьи
+
+            .tabs__content.justifyed.section-community__articles.active
+                .grid-item
+                    span Модные статьи
+                    a(href="").show-all Смотреть все
+
+                    a(href="").img
+                        img(src="../../../img/img--contest.jpg" alt /)
+
+                    a(href="").img
+                        img(src="../../../img/img--contest.jpg" alt /)
+
+                .grid-item
+                    span Полезные статьи
+                    a(href="").show-all Смотреть все
+
+                    a(href="").img
+                        img(src="../../../img/img--contest.jpg" alt /)
+
+                    a(href="").img
+                        img(src="../../../img/img--contest.jpg" alt /)
+
+
+            .tabs__content.justifyed.section-community__vacancy
+                .grid-item
+                    a.show-vacancy Ваканси 1
+                    .section-community__vacancy-about
+                        p Лодены пастельных оттенков, однотонные плательные шерсти с эластаном осенних приглушенных цветов, пальтовые кашемиры, шерстяные плательные трикотажи, очень много вязаного ажурного трикотажа с мохером и без, букле и рогожки Шанель, фактурные объемные трикотажные полотна...
+                        p Пальтовые кашемиры, шерстяные плательные трикотажи, очень много вязаного ажурного Шанель, фактурные объемные трикотажные полотна...
+                        time 26 марта 2015
+
+                .grid-item
+                    a.show-vacancy Ваканси 2
+                    .section-community__vacancy-about
+                        p Лодены пастельных оттенков, однотонные плательные шерсти с эластаном осенних приглушенных цветов, пальтовые кашемиры, шерстяные плательные трикотажи, очень много вязаного ажурного трикотажа с мохером и без, букле и рогожки Шанель, фактурные объемные трикотажные полотна...
+                        p Пальтовые кашемиры, шерстяные плательные трикотажи, очень много вязаного ажурного Шанель, фактурные объемные трикотажные полотна...
+                        time 26 марта 2015
+
+                a.show-all Все вакансии
+
+            .tabs__content.justifyed.section-community__contest
+                span Действующие
+
+                .grid-item
+                    a.img
+                        img(src="../../../img/img--contest-1.jpg" alt /)
+
+                .grid-item
+                    a.img
+                        img(src="../../../img/img--contest-1.jpg" alt /)
+
+                .links
+                    a.show-post Прошедшие конкурсы
+                    a.show-all Все конкурсы
+
+        .social-api
+            div(id="vk_groups")
+            script(type="text/javascript" src="//vk.com/js/api/openapi.js?117")
+            script(type="text/javascript") VK.Widgets.Group("vk_groups", {mode: 0, width: "195", height: "215", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 45955039);
+
+            div(id="vkgram-widget-container" data-tag="" data-columns="5" data-width="195" data-height="215" data-uid="2147483647")
+            script(type="text/javascript" src="http://vkgram.com/wdgt/script.js")
+
+    section.section-text.index--seo
+        h3 Заголовок SEO-текста
+        p SEO-текст. Туманность Андромеды прочно иллюстрирует керн, тем не менее, Дон Еманс включил в список всего 82-е Великие Кометы. Ганимед интуитивно понятен. Исполинская звездная спираль с поперечником в 50 кпк возможна. Радиант пространственно представляет собой далекий космический мусор.
+        p Как мы уже знаем, экватор пространственно выбирает Каллисто - это солнечное затмение предсказал ионянам Фалес Милетский. Уравнение времени прочно притягивает первоначальный эксцентриситет, при этом плотность Вселенной в 3 * 10 в 18-й степени раз меньше, с учетом некоторой неизвестной добавки скрытой массы. По космогонической гипотезе Джеймса Джинса, натуральный логарифм выбирает Млечный Путь. Многие кометы имеют два хвоста, однако аргумент перигелия вращает pадиотелескоп Максвелла. Юпитер выбирает непреложный болид.
+
+    section.section-links
+        ul
+            li
+                a(href="") Брендовые ткани
+            li
+                a(href="") Эксклюзивные ткани
+            li
+                a(href="") Ткани Миссони
+            li
+                a(href="") Ткани Армани
+            li
+                a(href="") Ткани Dolce Gabbana
+            li
+                a(href="") Стильные ткани
+            li
+                a(href="") Элитные ткани
+            li
+                a(href="") Модные ткани
+            li
+                a(href="") Модные ткани оптом
+            li
+                a(href="") Необычные ткани
+            li
+                a(href="") Нарядные ткани
+            li
+                a(href="") Мятые ткани
+            li
+                a(href="") Клеевая ткань
+            li
+                a(href="") Штапель
+            li
+                a(href="") Двустороняя стеганая ткань
+            li
+                a(href="") Стеганные ткани
+            li
+                a(href="") Шебби шик
+            li
+                a(href="") Ткань для халатов
+            li
+                a(href="") Ткань для полотенец
+            li
+                a(href="") Ткань для пижамы
+            li
+                a(href="") Красивые ткани
+            li
+                a(href="") Качественные ткани
+            li
+                a(href="") Ткани от кутюр
+            li
+                a(href="") Плотная ткань
+            li
+                a(href="") Ткань милитари
+            li
+                a(href="") Декоративные ткани
+            li
+                a(href="") Ткани с рисунком
+            li
+                a(href="") Мягкая ткань
+            li
+                a(href="") Натуральные ткани
+            li
+                a(href="") Толстая ткань
+            li
+                a(href="") Ткани для занавесок
+            li
+                a(href="") ткани для толстовок
+            li
+                a(href="") Ткани для скатерти
+            li
+                a(href="") Ткани для покрывала
+            li
+                a(href="") Ткани для поделок и рукоделия
+            li
+                a(href="") Ткани для верхней одежды
+            li
+                a(href="") Водонепроникающие ткани
+            li
+                a(href="") Водоотталкивающая ткань
+            li
+                a(href="") Непромокаемая ткань
+            li
+                a(href="").show-all Показать все
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/main.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});

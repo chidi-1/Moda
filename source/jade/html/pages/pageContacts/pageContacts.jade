@@ -1,0 +1,167 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .page-contacts
+        ul.breadcrumbs
+            li
+                a(href="") Главная страница
+            li
+                a(href="") О нас
+            li
+                span Контактная информация
+
+        h4 Контактная информация
+
+        .contact__links
+            a(href="tel:88007777131")
+                img(src='../../../img/icon--contacts-phone.png' alt /)
+                = " +7 800 777 71 31"
+
+            a(href="mailto:mail@modnye-vmeste.ru")
+                img(src='../../../img/icon--contacts-mail.png' alt /)
+                = " mail@modnye-vmeste.ru"
+
+            a(href="skype:easytailor.mv")
+                img(src='../../../img/icon--contacts-skype.png' alt /)
+                = " easytailor.mv"
+
+        .contacts__moskow-shop
+            h6 Магазин в Москве
+                img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                span(style="color: #0252a2") Баумановская
+
+            p Телефон: +7(945) 777-71-31
+
+            p
+                strong Режим работы
+                = " Пн-Пт                11:00 - 19:30"
+                br
+                = " Суббота            11:00 - 18:00"
+                br
+                = " Воскресенье   11:00 - 17:00"
+
+            p
+                strong Адрес:
+                = " 105005, г. Москва, набережная Академика Туполева, д.15, корп.28. "
+                a(href="")
+                    span Карта и схема прохода внутри территории
+
+        .contacts__pasport
+            img(src='../../../img/img--pasport.png' alt /)
+            .contacts__pasport-text
+                p
+                    strong Просим Вас  Обязательно взять паспорт Гражданина РФ!
+                    = " Так как его необходимо будет предъявить на посту охраны (КПП)!"
+                p Если у Вас нет паспорта Гражданина РФ!, обязательно предварительно свяжитесь с нами по телефону +7 (495) 771-71-31 для оформления пропуска. (К сожалению, пропуск оформляется 5 рабочих дней).
+
+        .contacts__subway
+            h6 Пункты выдачи в Москве
+            ul
+                li(style="color: #0252a2")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                    = " Название станции Метро"
+                li(style="color: #0252a2")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                    = " Название станции Метро"
+                li(style="color: #0252a2")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                    = " Название станции Метро"
+                li(style="color: #0252a2")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #0252a2")
+                    = " Название станции Метро"
+
+                li(style="color: #b1d332")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                    = " Название станции Метро"
+                li(style="color: #b1d332")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                    = " Название станции Метро"
+                li(style="color: #b1d332")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                    = " Название станции Метро"
+                li(style="color: #b1d332")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #b1d332")
+                    = " Название станции Метро"
+
+                li(style="color: #ef1e25")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                    = " Название станции Метро"
+                li(style="color: #ef1e25")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                    = " Название станции Метро"
+                li(style="color: #ef1e25")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                    = " Название станции Метро"
+                li(style="color: #ef1e25")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                    = " Название станции Метро"
+                li(style="color: #ef1e25")
+                    img(src="../../../img/icon--contacts-subway.png" alt style="background: #ef1e25")
+                    = " Название станции Метро"
+
+        .contacts__region
+            h6 Пункты выдачи в регионах
+
+            p Санкт-Петербург,
+                a(href="") ул. Академика Лебедева, д. 21
+            p Екатеринбург,
+                a(href="") ул.8 Марта, д.8, ТЦ «Мытный двор», 2 этаж
+            p Тюмень,
+                a(href="") ул. Комсомольская, д.58
+            p Махачкала,
+                a(href="") ул. Коркмасова, д.14
+            p Ростов-на-Дону,
+                a(href="") проспект Стачки, д.25
+            p Краснодар,
+                a(href="") ул. им 40-летия Победы, д.43
+            p Новосибирск,
+                a(href="") ул. Богдана Хмельницкого, д. 381
+            p Красноярск,
+                a(href="") ул. Полтавская д. 38 стр. 1
+            p Нижний Новгород,
+                a(href="") ул. Короленко д. 19
+            p Казань,
+                a(href="") ул. Баумана д. 13
+
+        .contacts__params
+            .contacts__params--props
+                h6 Реквизиты
+                    a(href="" download) Скачать реквизиты
+
+                p
+                    br
+                    ='ООО "Модные Вместе"'
+                    br
+                    ="Юридический адрес: "
+                    br
+                    ="105005, г.Москва, набережная Ак.Туполева, д.15, к.29"
+                    br
+                    ="ИНН 7709901449"
+                    br
+                    ="КПП 770901001"
+                    br
+                    ="ОГРН 1127746277669"
+                    br
+                    ="ОКПО 09244360"
+                    br
+                    ='р/с 40702810820100001809 в «ТКБ ОАО» г.Москва'
+                    br
+                    ="к/с 30101810800000000388"
+                    br
+                    ="БИК 044525388"
+
+            .contacts__params--button
+                h6 Наша кнопка-баннер
+                p Подбираете подходящую ткань для верхней одежды? Ищете что-то необычное для вечернего образа? Будьте уверены, в интернет-магазине «Модные Вместе» вы обязательно купите ткани, необходимые для пошива одежды.
+
+                p(id="clipboard-text").contacts__params--button-text
+                    = '<a href="http://modnye-vmeste.ru" target=”_blank“>'
+                    br
+                    ='<img src="http://modnye-vmeste.ru/promo.jpg"></a>'
+                a(data-clipboard-target="clipboard-text" id="target-to-copy").contacts__params--button-copy Скопировать
+
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/contact.jpg",opacity: 0.5,top: -1,left: 0,center: false,clip: true,show: false});});

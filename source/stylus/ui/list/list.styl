@@ -1,0 +1,237 @@
+.item-list
+  margin-left -2px
+  width 1057px
+
+  &__el
+    margin-left 20px
+    width 244px
+    position relative
+    margin-bottom 14px
+    text-align left
+
+    &--img
+      display block
+      text-align center
+      overflow hidden
+      border-radius 5px
+      margin-bottom 16px
+      width 245px
+
+      a
+        display block
+        overflow hidden
+
+        img
+          display block
+          min-width 100%
+          min-height 245px
+
+    &__ifno
+      display block
+      padding 0 11px
+      margin-bottom 13px
+
+      &-title
+        display block
+        font-size 18px
+
+      &-price
+        display inline-block
+        vertical-align top
+        color $cRed
+        font-size 18px
+        margin-right 5px
+
+        i
+          font-family $fRublre
+          font-size 18px
+          font-style normal
+          line-height inherit
+
+      &-old-price
+        display inline-block
+        vertical-align top
+        color $cGray
+        font-size 18px
+        margin-right 5px
+        text-decoration line-through
+
+        i
+          font-family $fRublre
+          font-size 18px
+          font-style normal
+          line-height inherit
+
+        small
+          font-style normal
+          font-size 10px
+          line-height 13px
+          vertical-align top
+
+      &-measure
+        display inline-block
+        vertical-align top
+        color $cGray
+        font-size 18px
+
+        i
+          font-style normal
+          font-size 10px
+          line-height 13px
+          vertical-align top
+
+    &__buttons
+      display block
+      position relative
+
+
+
+      .inp
+        width 67px
+        display block
+        padding-left 10px
+        border 1px solid #cccccc
+        font-size 16px
+
+      .btn-green
+        padding-left 30px
+        position relative
+
+      .btn-green:before
+        position absolute
+        content ''
+        top 12px
+        left 11px
+        background url("../img/icon--basket.png") no-repeat 0 0
+        width 17px
+        height 17px
+
+      .popup
+        display none
+        position absolute
+        background #fff
+        border 1px solid #cccccc
+        border-radius 10px
+        padding 9px 10px
+        right -237px
+        bottom -1px
+
+        span
+          padding-right 5px
+
+        a
+          color $cGreen
+          text-decoration underline
+
+      .popup:before
+        position absolute
+        content ''
+        width 9px
+        height 9px
+        border-top 1px solid #cccccc
+        border-left 1px solid #cccccc
+        background #ffffff
+        transform rotate(-45deg)
+        -webkit-transform rotate(-45deg)
+        left - 6px
+        top 13px
+
+    &__links
+      .btn-green
+        position absolute
+        font-size 12px
+        text-transform none
+        height 32px
+        line-height 34px
+        top 21px
+        right 20px
+        border-radius 5px
+        width 76px
+
+      .btn-green.fancy
+        left 20px
+        right auto
+        width 133px
+
+    &__links-bottom
+      display block
+      padding 0 11px
+
+      a
+        display block
+        margin-bottom 11px
+        position relative
+
+        i
+          display inline-block
+          vertical-align top
+          font-family $fIcons
+          color $cGray
+          font-size 15px
+          margin-right 12px
+          font-style normal
+
+        span
+          display inline-block
+          vertical-align top
+          font-size 15px
+          font-weight 300
+          color $cRed
+          border-bottom 1px dashed $cRed
+
+
+
+    .visible
+      position relative
+      z-index 15%
+
+    .hidden
+      width 1px
+      height 1px
+      overflow hidden
+      opacity 0
+      position absolute
+      z-index 25
+      top  -11px
+      left -11px
+      right -10px
+      padding 10px
+      background #ffffff
+      border 1px solid #cccccc
+      border-radius 10px
+      box-shadow 0 0 10px #cccccc
+      transition opacity 0.2s
+      -webkit-transition opacity 0.2s
+
+      .item-list__el__buttons
+        margin-bottom 28px
+
+  .item-list__el:hover
+    .hidden
+      opacity 1
+      width auto
+      height auto
+      overflow visible
+
+.counter
+  position relative
+  display inline-block
+  vertical-align top
+  margin-right 10px
+  margin-left 12px
+
+  a
+    position absolute
+    right 2px
+    z-index 20
+    width 18px
+    height 18px
+    background url("../img/sprite--counter.png") no-repeat 0 0
+
+  .counter-add
+    top 1px
+    background-position 3px 6px
+
+  .counter-remove
+    bottom 2px
+    background-position 3px -32px

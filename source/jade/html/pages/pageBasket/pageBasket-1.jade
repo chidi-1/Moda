@@ -1,0 +1,290 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .page-basket
+        ul.basket-nav
+            li.basket-nav__el.active
+                span Корзина
+            li.basket-nav__el
+                span Контактная информация
+            li.basket-nav__el
+                span Доставка и самовывоз
+            li.basket-nav__el
+                span Подтверждение
+            li.basket-nav__el
+                span Готово
+
+        h1 Корзина
+
+        section.basket-content
+            .basket-empty.hidden-block
+                span.basket-notification Ваша корзина пуста. Перейдите в каталог товаров, чтобы совершить покупку.
+
+            .basket-full
+                span.basket-notification Вы выбрали следующие товары
+
+                .basket-list--wrap
+                    form(action="" method="post").basket-form
+                        ul(data-remove-url="../../../js/ajax/remove-basket.php" data-change-url="../../../js/ajax/change-basket.php" data-method="post").basket-list
+                            li.basket-list__el
+                                a(href='' data-id="item_01").basket-list__el-delete.js--delete
+
+                                .basket-list__el--img
+                                    .visible
+                                        img(src='../../../img/img--item-01-s.jpg' alt /)
+
+                                    .hidden
+                                        img(src='../../../img/img--item-01-l.jpg' alt /)
+
+                                .basket-list__el--info
+                                    a(href="") Американский хлопок
+                                    span Артикул 435534545
+
+                                .basket-list__el--params
+                                    input(type="hidden" name="item_id" value="item_01").input-id
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+
+                                    span.basket-list__el--params--measure м
+                                        i 2
+
+                                    span.basket-list__el--params--price 8000
+                                        i o
+
+                            li.basket-list__el
+                                a(href='' data-id="item_01").basket-list__el-delete.js--delete
+                                .basket-list__el--img
+                                    .visible
+                                        img(src='../../../img/img--item-01-s.jpg' alt /)
+                                    .hidden
+                                        img(src='../../../img/img--item-01-l.jpg' alt /)
+                                .basket-list__el--info
+                                    a(href="") Американский хлопок
+                                    span Артикул 435534545
+                                .basket-list__el--params
+                                    input(type="hidden" name="item_id" value="item_01")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    span.basket-list__el--params--measure м
+                                        i 2
+                                    span.basket-list__el--params--price 8000
+                                        i o
+
+                            li.basket-list__el
+                                a(href='' data-id="item_01").basket-list__el-delete.js--delete
+                                .basket-list__el--img
+                                    .visible
+                                        img(src='../../../img/img--item-01-s.jpg' alt /)
+                                    .hidden
+                                        img(src='../../../img/img--item-01-l.jpg' alt /)
+                                .basket-list__el--info
+                                    a(href="") Американский хлопок
+                                    span Артикул 435534545
+                                .basket-list__el--params
+                                    input(type="hidden" name="item_id" value="item_01")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    span.basket-list__el--params--measure м
+                                        i 2
+                                    span.basket-list__el--params--price 8000
+                                        i o
+
+                            li.basket-list__el
+                                a(href='' data-id="item_01").basket-list__el-delete.js--delete
+                                .basket-list__el--img
+                                    .visible
+                                        img(src='../../../img/img--item-01-s.jpg' alt /)
+                                    .hidden
+                                        img(src='../../../img/img--item-01-l.jpg' alt /)
+                                .basket-list__el--info
+                                    a(href="") Американский хлопок
+                                    span Артикул 435534545
+                                .basket-list__el--params
+                                    input(type="hidden" name="item_id" value="item_01")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    span.basket-list__el--params--measure м
+                                        i 2
+                                    span.basket-list__el--params--price 8000
+                                        i o
+
+                            li.basket-list__el
+                                a(href='' data-id="item_01").basket-list__el-delete.js--delete
+                                .basket-list__el--img
+                                    .visible
+                                        img(src='../../../img/img--item-01-s.jpg' alt /)
+                                    .hidden
+                                        img(src='../../../img/img--item-01-l.jpg' alt /)
+                                .basket-list__el--info
+                                    a(href="") Американский хлопок
+                                    span Артикул 435534545
+                                .basket-list__el--params
+                                    input(type="hidden" name="item_id" value="item_01")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    span.basket-list__el--params--measure м
+                                        i 2
+                                    span.basket-list__el--params--price 8000
+                                        i o
+
+                    .basket--total
+                        span Всего на сумму
+                        span.basket-total-value
+                            small 62 650
+                            i o
+
+                .basket-full__links
+                    a(href="").basket-full__links-save.js--basket-save Сохранить заказ  и оформить позже
+                    a(href="").btn-green Оформить заказ
+
+
+        section.basket-comparison
+            h2.bg--green-left Сравнение
+            a(href="").show-all Показать все
+
+            ul.comparison-list
+                li.comparison-list__el
+                    .comparison-list__el-img
+                        img(src='../../../img/img--material-2.jpg' alt /)
+
+                    .comparison-list__el__info
+                        a(href="").comparison-list__el__info-name Американский хлопок
+                        span(href="").comparison-list__el__info-art Артикул 78658632
+                        span(href="").comparison-list__el__info-price 1200
+                            i o
+                        span(href="").comparison-list__el__info-measure м
+                            i 2
+
+                    .comparison-list__el--form
+                        form(action="../../../js/ajax/add-comparison-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="id_01")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a(data-id="item_01").btn-green.js--add-comparison-basket В корзину
+                            .popup
+                                span Добавлено
+
+                li.comparison-list__el
+                    .comparison-list__el-img
+                        img(src='../../../img/img--material-2.jpg' alt /)
+                    .comparison-list__el__info
+                        a(href="").comparison-list__el__info-name Американский хлопок
+                        span(href="").comparison-list__el__info-art Артикул 78658632
+                        span(href="").comparison-list__el__info-price 1200
+                            i o
+                        span(href="").comparison-list__el__info-measure м
+                            i 2
+                    .comparison-list__el--form
+                        form(action="../../../js/ajax/add-comparison-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="id_01")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a(data-id="item_01").btn-green.js--add-comparison-basket В корзину
+                            .popup
+                                span Добавлено
+
+                li.comparison-list__el
+                    .comparison-list__el-img
+                        img(src='../../../img/img--material-2.jpg' alt /)
+                    .comparison-list__el__info
+                        a(href="").comparison-list__el__info-name Американский хлопок
+                        span(href="").comparison-list__el__info-art Артикул 78658632
+                        span(href="").comparison-list__el__info-price 1200
+                            i o
+                        span(href="").comparison-list__el__info-measure м
+                            i 2
+                    .comparison-list__el--form
+                        form(action="../../../js/ajax/add-comparison-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="id_01")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a(data-id="item_01").btn-green.js--add-comparison-basket В корзину
+                            .popup
+                                span Добавлено
+
+                li.comparison-list__el
+                    .comparison-list__el-img
+                        img(src='../../../img/img--material-2.jpg' alt /)
+                    .comparison-list__el__info
+                        a(href="").comparison-list__el__info-name Американский хлопок
+                        span(href="").comparison-list__el__info-art Артикул 78658632
+                        span(href="").comparison-list__el__info-price 1200
+                            i o
+                        span(href="").comparison-list__el__info-measure м
+                            i 2
+                    .comparison-list__el--form
+                        form(action="../../../js/ajax/add-comparison-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="id_01")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a(data-id="item_01").btn-green.js--add-comparison-basket В корзину
+                            .popup
+                                span Добавлено
+
+                li.comparison-list__el
+                    .comparison-list__el-img
+                        img(src='../../../img/img--material-2.jpg' alt /)
+                    .comparison-list__el__info
+                        a(href="").comparison-list__el__info-name Американский хлопок
+                        span(href="").comparison-list__el__info-art Артикул 78658632
+                        span(href="").comparison-list__el__info-price 1200
+                            i o
+                        span(href="").comparison-list__el__info-measure м
+                            i 2
+                    .comparison-list__el--form
+                        form(action="../../../js/ajax/add-comparison-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="id_01")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a(data-id="item_01").btn-green.js--add-comparison-basket В корзину
+                            .popup
+                                span Добавлено
+
+                li.comparison-list__el
+                    .comparison-list__el-img
+                        img(src='../../../img/img--material-2.jpg' alt /)
+                    .comparison-list__el__info
+                        a(href="").comparison-list__el__info-name Американский хлопок
+                        span(href="").comparison-list__el__info-art Артикул 78658632
+                        span(href="").comparison-list__el__info-price 1200
+                            i o
+                        span(href="").comparison-list__el__info-measure м
+                            i 2
+                    .comparison-list__el--form
+                        form(action="../../../js/ajax/add-comparison-basket.php" method="post")
+                            input(type="hidden" name="item_id" value="id_01")
+                            .counter(data-step="1")
+                                input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                a(href="").counter-add.js--counter--button.js-add
+                                a(href="").counter-remove.js--counter--button.js-remove
+                            a(data-id="item_01").btn-green.js--add-comparison-basket В корзину
+                            .popup
+                                span Добавлено
+
+
+
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/basket-1.jpg",opacity: 0.5,top: 2,left: 0,center: false,clip: true,show: false});});

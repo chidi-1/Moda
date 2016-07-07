@@ -1,0 +1,35 @@
+.popup--wrap.popup-sm
+
+    .popup--inner
+
+        .justifyed
+            a(href="popup-registration.html" class="fancybox.ajax").fancy.right-link Регистрация
+            h2 Вход
+
+        form(action="../../../js/ajax/enter.php" method="post").main-form.enter-form
+            label
+                input(type="text" name="mail" placeholder="Ваш адрес электронной почты" required).inp.required.input-mail
+
+            label.label-pass
+                input(type="password" name="mail" placeholder="Ваш пароль" required).inp.required.input-pass
+                i.show-pass.icon-eye-open.js--show-pass
+
+            .pass-forgot
+                a(href="../pagePopup/popup-forgot-pass.html" class="fancybox.ajax").fancy  Забыли пароль?
+
+            label.result
+                a(href="").btn-green.js--form-submit Войти на сайт
+                span.error-text
+
+        .popup-social
+            span Войдите при помощи социальных сетей
+
+            ul
+                li
+                    a(href="").social-fb
+                li
+                    a(href="").social-tw
+                li
+                    a(href="").social-vk
+                li
+                    a(href="").social-gl

@@ -1,0 +1,133 @@
+.page-review
+  padding 0 20px
+
+.review--content
+  display inline-block
+  vertical-align top
+  width 675px
+
+  .reviews-list
+    display inline-block
+    vertical-align top
+    margin-top -1px
+
+    &__el
+      display block
+      padding-bottom 50px
+
+      &--header
+        display block
+        border-bottom 1px solid #ededed
+        padding-bottom 18px
+
+        time
+          display inline-block
+          vertical-align top
+          padding-right 5px
+          border-right 1px solid $cGray
+
+        span
+          display inline-block
+          vertical-align top
+          padding-left 5px
+
+      &--content
+        padding-top 13px
+
+        p.answer
+          margin-left 14px
+          font-weight 300
+          font-size 14px
+          color $cRed
+          border-left 3px solid $cRed
+          padding-left 20px
+          margin-top 18px
+
+.review--form
+  display inline-block
+  vertical-align top
+  width 300px
+  position relative
+  z-index 25
+  margin-top 12px
+  text-align center
+
+  h2.bg--green-right
+    margin-left -43px
+    margin-bottom 9px
+
+  .inp
+    display inline-block
+    vertical-align top
+    border 1px solid $cGray-l
+    width 300px
+    height 40px
+    border-radius 5px
+    padding-left 20px
+    margin-bottom 17px
+
+  .inp:required
+    border 1px solid #82ba6c
+    color #82ba6c
+
+  .inp:invalid
+    border 1px solid $cGray-l
+    color $cGray
+
+
+  .inp.error
+    border 1px solid #dc493c
+
+  textarea
+    display block
+    border 1px solid $cGray-l
+    width 300px
+    padding 10px 20px
+    border-radius 5px
+    font-size 13px
+    height 120px
+    margin-bottom 15px
+
+  textarea:required
+    border 1px solid #82ba6c
+    color #82ba6c
+
+  textarea:invalid
+    border 1px solid #cccccc
+    color $cGray
+
+  textarea.error
+    border 1px solid #dc493c
+
+  .btn-green
+    width 200px
+    text-align center
+    position relative
+
+    span
+      color #fff
+      font-size 16px
+      padding-left 26px
+
+  .btn-green:before
+    position absolute
+    content ''
+    width 14px
+    height 16px
+    background url("../img/icon--pan-w.png") no-repeat 0 0
+    top 13px
+    left 15px
+
+
+.reviews__more
+  display block
+  text-align center
+  padding-top 20px
+
+  a
+    color $cGreen
+    font-size 16px
+    border-bottom 1px dashed $cGreen
+
+  a:hover
+    border-bottom 1px dashed transparent

@@ -1,0 +1,135 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .page-payment
+        ul.breadcrumbs
+            li
+                a(href="") Главная страница
+            li
+                a(href="") Личный кабинет
+            li
+                span Оплата заказа № 26.106.0006
+
+        h1 Оплата заказа № 26.106.0006
+
+        p Радиант, на&nbsp;первый взгляд, неустойчив. Соединение последовательно. Многие кометы имеют два хвоста, однако кульминация прочно колеблет узел&nbsp;&mdash; это солнечное затмение предсказал ионянам Фалес Милетский. Противостояние притягивает астероидный возмущающий фактор, данное соглашение было заключено на&nbsp;2-й международной конференции &laquo;Земля из&nbsp;космоса&nbsp;&mdash; наиболее эффективные решения&raquo;.
+
+        ul.payment-list
+            li
+                span.payment-list--title Наличными при получении
+
+                .payment-list__method
+                    a(href="").btn-green Выбрать
+                    P Краткая инструкция. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+
+            li
+                span.payment-list--title Банковской картой
+                    small Комиссия: от 2,8%
+
+                .payment-list__method
+                    a(href="").btn-green Оплатить
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-card.jpg" alt /)
+                    .payment-list__method--comment
+                        span Комиссия: 2,8 %
+
+            li
+                span.payment-list--title Электронными деньгами
+                    small Комиссия: от 0 до 3%
+
+                .payment-list__method
+                    a(href="").btn-green Оплатить
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-ya.jpg" alt /)
+                    .payment-list__method--comment
+                        span Яндекс.Деньги. Комиссия: 0 %
+
+                .payment-list__method
+                    a(href="").btn-green Оплатить
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-wm.jpg" alt /)
+                    .payment-list__method--comment
+                        span WebMoney. Комиссия: 1-3 %
+
+                .payment-list__method
+                    a(href="").btn-green Оплатить
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-visa.jpg" alt /)
+                    .payment-list__method--comment
+                        span QIWI Visa Wallet. Комиссия: 1-3 %
+
+                .payment-list__method
+                    a(href="").btn-green Оплатить
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-mail.jpg" alt /)
+                    .payment-list__method--comment
+                        span Деньги@mail.ru Комиссия: 1-3 %
+
+            li
+                span.payment-list--title Через интернет-банк
+                    small Комиссия: от 0 до 3%
+
+                .payment-list__method
+                    a(href="").btn-green Оплатить
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-sber.jpg" alt /)
+                    .payment-list__method--comment
+                        span Сбербанк. Комиссия: 0 %
+
+                .payment-list__method
+                    a(href="").btn-green Оплатить
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-vtb.jpg" alt /)
+                    .payment-list__method--comment
+                        span ВТБ24. Комиссия: 1-3 %
+
+                .payment-list__method
+                    a(href="").btn-green Оплатить
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-alpha.jpg" alt /)
+                    .payment-list__method--comment
+                        span Альфа-банк. Комиссия: 1-3 %
+
+            li
+                span.payment-list--title Терминалы оплаты
+                    small Комиссия: от 1 до 3%
+
+                .payment-list__method
+                    a(href="").btn-green Адреса терминалов
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-platezh.jpg" alt /)
+                    .payment-list__method--comment
+                        span Платеж.ру Комиссия: 0 %
+
+                .payment-list__method
+                    a(href="").btn-green Адреса терминалов
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-eleksnet.jpg" alt /)
+                    .payment-list__method--comment
+                        span Элекснет. Комиссия: 1-3 %
+
+                .payment-list__method
+                    a(href="").btn-green Адреса терминалов
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-visa.jpg" alt /)
+                    .payment-list__method--comment
+                        span QIWI Visa Wallet. Комиссия: 1-3 %
+
+            li
+                span.payment-list--title В любом филиале Сбербанка
+                    small Комиссия: 1%
+
+                p.instructuin Краткая инструкция. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+
+                .payment-list__method
+                    a(href="").btn-green Адреса филиалов
+                    .payment-list__method--img
+                        img(src="../../../img/icon--payment-sber.jpg" alt /)
+                    .payment-list__method--comment
+                        span Комиссия 1%
+
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/payment-order.jpg",opacity: 0.5,top: -16,left: 0,center: false,clip: true,show: false});});

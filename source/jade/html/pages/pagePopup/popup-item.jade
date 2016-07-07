@@ -1,0 +1,90 @@
+.popup--wrap.popup-l
+
+    .popup--inner
+        .popup-item__header
+            a(href="").right-link Перейти на страницу товара
+            h2 Шелк марлевка
+            span
+                strong Артикул
+                = " 4357865"
+
+        .popup-item__photo
+            .tabs
+                .tabs__content.active
+                    img(src="../../../img/img--item-01-l.jpg" alt /)
+                .tabs__content
+                    img(src="../../../img/img--item-02-s.jpg" alt /)
+                .tabs__content
+                    img(src="../../../img/img--item-03-s.jpg" alt /)
+                .tabs__content
+                    img(src="../../../img/img--item-04-s.jpg" alt /)
+
+                ul.tabs__caption
+                    li.active
+                        img(src="../../../img/img--item-01-s.jpg" alt /)
+                    li
+                        img(src="../../../img/img--item-02-s.jpg" alt /)
+                    li
+                        img(src="../../../img/img--item-03-s.jpg" alt /)
+                    li
+                        img(src="../../../img/img--item-04-s.jpg" alt /)
+
+        .popup-item__info
+            span.popup-item__info-price 120
+                i o
+            span.popup-item__info-measure 0.1м
+                i 2
+
+            .popup-item__info--params
+                span
+                    strong Производитель
+                    = " Производитель"
+                span
+                    strong Назначение
+                    = " Назначение"
+                span
+                    strong Тематика
+                    = " Тематика"
+                span
+                    strong Состав
+                    = " Состав"
+                span
+                    strong Цвет
+                    = " Цвет"
+                span
+                    strong Ширина
+                    = " Ширина"
+
+            p Яркие краски цветочного узора на этой ткани создают прекрасное отпускное настроение. Цветочный принт моден и актуален как никогда. Шейте чудесные летние платья, пышные юбки, игривые сарафаны и, конечно же, одежду для детей. В этой коллекции много тканей-компаньонов.
+
+            ul.popup-item__info-icons
+                li
+                    img(src="../../../img/icon--usage-1.png" alt /)
+                li
+                    img(src="../../../img/icon--usage-2.png" alt /)
+                li
+                    img(src="../../../img/icon--usage-3.png" alt /)
+                li
+                    img(src="../../../img/icon--usage-4.png" alt /)
+                li
+                    img(src="../../../img/icon--usage-5.png" alt /)
+                li
+                    img(src="../../../img/icon--usage-6.png" alt /)
+
+            .popup-item__info__buttons
+                form(action="" method="")
+                    input(type="hidden" name="item_id" value="id_01")
+
+                    label(data-cost="120" data-step="0.1").counter
+                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                        a(href="").counter-add.js--counter--button.js-add
+                        a(href="").counter-remove.js--counter--button.js-remove
+
+                    a.popup-item__info__buttons-total.btn-green.js--send-popup-item.total
+                        strong в корзину
+                        i Итого: 0 руб.
+
+                    div
+                        a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_04").js--add-compare
+                            img(src="../../../img/icon--comprasion.png" alt="")
+                            = " В сравнение"

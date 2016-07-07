@@ -1,0 +1,1323 @@
+.page-basket
+  padding 0 20px
+
+  .basket-content
+    padding-bottom 71px
+
+  .basket-nav
+    background #ffffff; /* Old browsers */
+    background -moz-linear-gradient(top,  #ffffff 0%, #d1d1d1 50%, #dbdbdb 51%, #dcdcdc 100%)
+    background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#d1d1d1), color-stop(51%,#dbdbdb), color-stop(100%,#dcdcdc))
+    background -webkit-linear-gradient(top,  #ffffff 0%,#d1d1d1 50%,#dbdbdb 51%,#dcdcdc 100%)
+    background -o-linear-gradient(top,  #ffffff 0%,#d1d1d1 50%,#dbdbdb 51%,#dcdcdc 100%)
+    background -ms-linear-gradient(top,  #ffffff 0%,#d1d1d1 50%,#dbdbdb 51%,#dcdcdc 100%)
+    background linear-gradient(to bottom,  #ffffff 0%,#d1d1d1 50%,#dbdbdb 51%,#dcdcdc 100%)
+    height 49px
+    margin-top 2px
+    white-space nowrap
+    margin-bottom 22px
+    border-radius  10px 0 0 10px
+
+    &__el
+      display table-cell
+      height 48px
+      vertical-align middle
+      border-left 1px solid #d8d8d8
+      border-right 1px solid #ffffff
+      border-top 1px solid #efefef
+      white-space normal
+
+      a, span
+        display block
+        color #b2b2b2
+        font-size 15px
+        text-align center
+        font-weight 300
+        text-transform uppercase
+
+    &__el:nth-child(1)
+      border-left none
+      border-radius  10px 0 0 10px
+      width 155px
+
+    &__el:nth-child(2)
+      width 278px
+
+    &__el:nth-child(3)
+      width 249px
+
+    &__el:nth-child(4)
+      width 197px
+
+    &__el:nth-child(5)
+      border-right none
+      border-radius  0
+      width 150px
+
+    &__el.active
+      position relative
+      border-top 1px solid #c7e2c2
+      background #c7e2c2
+      background -moz-linear-gradient(top,  #c7e2c2 0%, #a2cea9 20%, #99c2a0 100%)
+      background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c7e2c2), color-stop(20%,#a2cea9), color-stop(100%,#99c2a0))
+      background -webkit-linear-gradient(top,  #c7e2c2 0%,#a2cea9 20%,#99c2a0 100%)
+      background -o-linear-gradient(top,  #c7e2c2 0%,#a2cea9 20%,#99c2a0 100%)
+      background -ms-linear-gradient(top,  #c7e2c2 0%,#a2cea9 20%,#99c2a0 100%)
+      background linear-gradient(to bottom,  #c7e2c2 0%,#a2cea9 20%,#99c2a0 100%)
+
+      a, span
+        color #fff
+
+    &__el.active:after
+      position absolute
+      content ''
+      top -1px
+      right -7px
+      bottom 0
+      width 7px
+      height 49px
+      background url("../img/decor--steps.png") no-repeat 0 0
+
+    &__el:last-child.active
+      background #eab1a7
+      border-top 1px solid #f5b6ae
+      background -moz-linear-gradient(top,  #f5b6ae 0%, #f4978b 20%, #e58e83 100%)
+      background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5b6ae), color-stop(20%,#f4978b), color-stop(100%,#e58e83))
+      background -webkit-linear-gradient(top,  #f5b6ae 0%,#f4978b 20%,#e58e83 100%)
+      background -o-linear-gradient(top,  #f5b6ae 0%,#f4978b 20%,#e58e83 100%)
+      background -ms-linear-gradient(top,  #f5b6ae 0%,#f4978b 20%,#e58e83 100%)
+      background linear-gradient(to bottom,  #f5b6ae 0%,#f4978b 20%,#e58e83 100%)
+
+    &__el:last-child.active:after
+      display none
+
+
+  .basket-notification
+    display block
+    font-size 18px
+    color $cBlack
+    font-weight 300
+    padding-top 11px
+    padding-bottom 22px
+
+  .basket-list--wrap
+    border 1px dashed #d7d7d7
+    border-radius  10px
+    padding 20px 18px 18px
+
+    .basket-list
+      display block
+      margin-top -30px
+
+      &__el
+        border-bottom 1px solid #d7d7d7
+        display block
+        padding-top 30px
+        padding-bottom 19px
+        white-space nowrap
+
+        .basket-list__el-delete
+          display inline-block
+          vertical-align top
+          white-space normal
+          width 32px
+          height 32px
+          margin-top 28px
+          margin-right 14px
+          background url("../img/icon--remove.png") no-repeat 0 0
+
+        .basket-list__el--img
+          display inline-block
+          vertical-align top
+          white-space normal
+          width 100px
+          margin-right 18px
+          position relative
+
+          .visible
+            display block
+            height 100px
+            overflow hidden
+
+            img
+              min-width 100%
+              min-height 100%
+
+          .hidden
+            width 0
+            height 0
+            opacity 0
+            position absolute
+            background #ffffff
+            border-radius 10px
+            box-shadow 0 0 5px rgba(0,0,0,0.3)
+            top -360px
+            left -125px
+            transition opacity 0.2s
+            -webkit-transition opacity 0.2s
+            z-index 20
+            overflow hidden
+            padding 5px
+
+            img
+              width 335px
+              height 335px
+              display block
+              border-radius 10px
+
+          .visible:hover + .hidden
+            opacity 1
+            width 335px
+            height 335px
+
+        .basket-list__el--info
+          display inline-block
+          vertical-align top
+          white-space normal
+          width 585px
+
+          a
+            display inline-block
+            vertical-align top
+            color $cGreen
+            border-bottom  1px solid $cGreen
+            font-size 21px
+            padding-top 17px
+            line-height 21px
+            margin-bottom 11px
+
+          a:hover
+            border-bottom  1px solid transparent
+
+          span
+            display block
+            font-size 14px
+            color $cGray
+
+        .basket-list__el--params
+          display inline-block
+          vertical-align top
+          white-space normal
+          width 215px
+          padding-top 25px
+
+          .counter
+            margin-left 0
+            margin-right 10px
+
+          .inp
+            width 66px
+            height 41px
+            font-size 18px
+            line-height 40px
+            border 1px solid #cccccc
+
+          &--measure
+            display inline-block
+            vertical-align middle
+            width 50px
+            color $cGray-l
+            font-size 28px
+
+            i
+              font-style normal
+              font-size 15px
+              line-height 26px
+              vertical-align top
+
+          &--price
+            display inline-block
+            vertical-align middle
+            font-size 28px
+            color $cRed
+
+            i
+              font-family $fRublre
+              font-size 28px
+              color $cRed
+
+    .basket--total
+      display block
+      text-align right
+      padding-top 20px
+      padding-right 21px
+
+      span
+        font-size 28px
+        color $cGray-l
+        display inline-block
+        vertical-align top
+        text-transform uppercase
+        font-weight 500
+
+      .basket-total-value
+        color $cRed
+        margin-left 7px
+
+        small
+          font-size 28px
+
+        i
+          font-weight normal
+          font-family $fRublre
+          color $cRed
+          text-transform none
+
+  .basket-full__links
+    text-align right
+    display block
+    margin-top 27px
+
+    .btn-green
+      display inline-block
+      vertical-align middle
+      width 385px
+      height 70px
+      line-height 66px
+      font-size 38px
+      margin-left 35px
+      text-transform none
+
+    .basket-full__links-save
+      display inline-block
+      vertical-align middle
+      color $cGreen
+      font-size 21px
+      border-bottom  1px solid $cGreen
+
+    .basket-full__links-save:hover
+      border-bottom  1px solid transparent
+
+  .basket-comparison
+    display block
+
+    h2
+      display inline-block
+      vertical-align top
+      margin-bottom 15px
+
+    .show-all
+      display inline-block
+      vertical-align top
+      color $cGreen
+      text-decoration underline
+      font-size 13px
+      margin-left 19px
+      margin-top 19px
+
+    .show-all:hover
+      text-decoration none
+
+    .comparison-list
+      display block
+      margin-left -17px
+
+      &__el
+        margin-left 17px
+        margin-bottom 18px
+        display inline-block
+        vertical-align top
+        width 482px
+        padding 12px
+        padding-bottom 7px
+        border 1px solid #cccccc
+
+        &-img
+          display inline-block
+          vertical-align top
+          width 66px
+          height 61px
+          overflow hidden
+          margin-right 10px
+
+          img
+            min-width 100%
+            min-height 100%
+
+        &__info
+          display inline-block
+          vertical-align top
+          width 225px
+
+          a
+            display block
+            margin-top -3px
+            color $cGreen
+            text-decoration underline
+            font-size 18px
+            margin-bottom 5px
+
+          a:hover
+            text-decoration none
+
+          &-art
+            display block
+            font-size 12px
+            font-weight 300
+            color $cBlack
+            margin-bottom 5px
+
+          &-price
+            display inline-block
+            vertical-align top
+            color #b74638
+            font-size 18px
+            margin-right 3px
+
+            i
+              font-family 'als_rublregular'
+              font-size 18px
+              font-style normal
+
+          &-measure
+            display inline-block
+            vertical-align top
+            color #999
+            font-size 18px
+
+            i
+              font-style normal
+              font-size 10px
+              line-height 13px
+              vertical-align top
+
+        &--form
+          position relative
+          display inline-block
+          vertical-align top
+          width 170px
+          padding-top 15px
+
+          .counter
+            display inline-block
+            vertical-align top
+            width 51px
+            margin-right 8px
+            margin-left 0
+
+            a
+              zoom 0.8
+              right 4px
+
+          .counter-add
+            top 0
+
+          .counter-remove
+            bottom 0
+
+          .inp
+            display block
+            height 31px
+            line-height 29px
+            border 1px solid #cccccc
+            width 51px
+            text-align left
+            padding-left 10px
+            border-radius 9px
+
+          a.btn-green
+            border-radius 10px
+            display inline-block
+            vertical-align top
+            height 31px
+            width 111px
+            text-decoration none
+            line-height 33px
+            color #fff
+            margin-top 0
+            padding-left 27px
+            font-size 13px
+            position relative
+
+          a.btn-green:before
+            position absolute
+            content ''
+            width 14px
+            height 14px
+            background url("../img/icon--basket.png") no-repeat 0 0
+            top 9px
+            left 9px
+            background-size  100% 100%
+
+          .popup
+            display none
+            position absolute
+            background #fff
+            border 1px solid #ccc
+            border-radius 10px
+            padding 9px 10px
+            right -237px
+            bottom -1px
+
+            span
+              padding-right 5px
+
+            a
+              text-decoration underline
+              color $cGreen
+
+  .basket-contacts
+    display block
+    padding-bottom 32px
+
+    &__form
+      display inline-block
+      vertical-align top
+      width 485px
+      margin-top 3px
+      padding-bottom 30px
+
+      label
+        display block
+        margin-bottom 15px
+
+        span
+          display inline-block
+          vertical-align middle
+          color $cGray-l
+          font-size 16px
+          width 180px
+
+          i
+            color $cRed
+            display inline-block
+            vertical-align top
+            margin-left 5px
+
+        .inp
+          display inline-block
+          vertical-align middle
+          width 300px
+          height 41px
+          border 1px solid $cGray-l
+          border-radius 8px
+
+        .inp:required
+          border 1px solid #82ba6c !important
+          color #82ba6c
+
+        .inp:required + .show-pass
+          color #82ba6c
+
+        .inp:invalid
+          color $cGray
+
+        .inp:invalid + .show-pass
+          color $cGray
+
+        .inp.error
+          border 1px solid #dc493c !important
+          color #dc493c !important
+
+        .inp:focus
+          &::placeholder
+            opacity 0
+
+      label.text
+        display block
+        padding-left 180px
+
+        span
+          font-size 13px
+          display block
+
+          i
+            margin-right 5px
+
+        span.notification
+          padding-top 12px
+          padding-left 7px
+          font-size 12px
+          color $cBlack
+          white-space nowrap
+
+    &__enter
+      display inline-block
+      vertical-align top
+      width 400px
+      margin-left 44px
+      margin-top 56px
+
+      span.another
+        display inline-block
+        vertical-align top
+        width 88px
+        font-size 14px
+        color #cccccc
+        font-weight 300
+        margin-top 39px
+
+      div
+        display inline-block
+        vertical-align top
+        padding-left 75px
+        width 225px
+        background url("../img/icon--enter.jpg") no-repeat 0 2px
+
+        span
+          display block
+          font-size 14px
+          color $cGray-l
+          margin-bottom 15px
+
+          strong
+            color $cGray
+            font-size 19px
+
+        a
+          display inline-block
+          vertical-align top
+          color $cGreen
+          border-bottom 1px dashed $cGreen
+          font-size 16px
+          margin-top 22px
+
+        a:hover
+          border-bottom 1px dashed transparent
+
+  .basket-pagination
+    display block
+    text-align center
+    padding-bottom 50px
+
+    a
+      display inline-block
+      vertical-align middle
+      margin 0 28px
+      font-size 14px
+
+    a.basket-pagination__prev
+      color $cGreen
+      border-bottom 1px dashed $cGreen
+      position relative
+
+    a.basket-pagination__prev:hover
+      border-bottom 1px dashed transparent
+
+    a.basket-pagination__next:after,
+    a.basket-pagination__prev:before
+      position absolute
+      content "\f177"
+      font-family $fIcons
+      color $cGreen
+      font-size 16px
+      top 1px
+      left -21px
+      font-weight lighter
+      text-shadow none
+
+    a.basket-pagination__next:after
+      content "\f178"
+      left auto
+      right -20px
+
+    .btn-green
+      width 232px
+      height 41px
+      position relative
+
+    .btn-green.basket-pagination__oform
+      font-size 18px
+      width 255px
+      height 50px
+      line-height 52px
+
+    a.btn-green.basket-pagination__next:after
+      right 30px
+      top -1px
+      color #ffffff
+
+  .basket-confirmation
+    margin-top 1px
+
+    table.data-list
+      border 1px dashed #e1e1e1
+      width 100%
+
+      tr
+        td.data-list__el--title
+          background #fffbed
+          width 156px
+          border none
+          border-right 1px dashed #e1e1e1
+          border-bottom 1px dashed #e1e1e1
+          padding 19px 0 17px 24px
+          vertical-align top
+
+          span
+            font-weight 700
+            font-size 14px
+            color $cGray-l
+
+        .data-list__el--data
+          width 650px
+          padding 19px 0 14px 35px
+          border-bottom 1px dashed #e1e1e1
+          vertical-align top
+
+          span
+            display block
+            font-size 14px
+            color $cGray-l
+            margin-bottom 7px
+
+      tr:last-child
+        td
+          border-bottom none
+
+  .basret--payment
+    margin-top 56px
+    padding-bottom 30px
+
+    .title
+      display block
+      font-size 24px
+      color $cGray-l
+      padding-bottom 23px
+
+    label
+      margin-bottom 11px
+      display block
+
+      div
+        img
+          margin-right 9px
+          display inline-block
+          vertical-align middle
+          width 24px
+          margin-top 1px
+
+        .green
+          display none
+
+        .psevdoradio
+          display inline-block
+          vertical-align middle
+          width 10px
+          height 10px
+          border-radius 10px
+          background #ffffff
+          border 1px solid $cGray-l
+          margin-right 12px
+          margin-top 8px
+
+          i
+            width 6px
+            height 6px
+            border-radius 7px
+            margin-top 2px
+            margin-left 2px
+            display block
+
+        span
+          display inline-block
+          vertical-align middle
+          font-size 14px
+          margin-top 6px
+
+      input:checked + div
+        .green
+          display inline-block
+          vertical-align top
+
+        .gray
+          display none
+
+        .psevdoradio
+          border 1px solid $cGreen
+
+          i
+            background $cGreen
+
+        span
+          color $cGreen
+
+    .notification
+      font-size 14px
+      color $cGray
+      display block
+      padding-top 14px
+      font-weight normal
+
+      i
+        display inline-block
+        vertical-align top
+        color #f00
+        text-transform uppercase
+        margin-bottom 5px
+
+
+    .basret--payment__agreement
+      display block
+      text-align center
+      margin-top 49px
+
+      .psevdocheckbox
+        display inline-block
+        vertical-align top
+        width 15px
+        height 15px
+        border 2px solid #c9c9c9
+        border-radius 2px
+        margin-right 15px
+        margin-top 3px
+
+        i
+          width 9px
+          height 9px
+          border-radius 1px
+          margin-top 3px
+          margin-left 3px
+          display block
+
+      input:checked + .psevdocheckbox
+          i
+            background #c9c9c9
+
+      span
+        font-size 18px
+        color $cGray
+
+        a
+          font-size 18px
+          color $cGreen
+          text-decoration underline
+          display inline-block
+          vertical-align top
+          margin-left 5px
+
+        a:hover
+          text-decoration none
+
+  .basket-ready
+    .title
+      font-size 30px
+      color $cBlack
+      display block
+      padding-top 16px
+      line-height 30px
+
+      i
+        color $cPink
+        padding-left 5px
+
+    .instruction
+      display block
+      font-size 18px
+      color $cBlack
+      padding-bottom 28px
+
+      i
+        color $cPink
+        padding 0 5px
+
+    p
+      display block
+      font-size 14px
+      font-weight 300
+
+    .basket-ready__thanks
+      display block
+      text-align center
+      padding-top 40px
+
+      img
+        display block
+        margin 0 auto 87px
+
+      p
+        font-size 14px
+        display block
+
+      p.social
+        display inline-block
+        vertical-align top
+        padding-top 8px
+        margin-bottom 23px
+
+      .social-likes
+        display inline-block
+        vertical-align top
+        margin-left 15px
+
+        div
+          width 30px
+          display inline-block
+          vertical-align top
+          border none
+
+          .social-likes__button
+            border none
+            padding 0
+            display block
+            width 30px
+            height 30px
+            border-right 30px
+            background url("../img/sprite--social-share.jpg") no-repeat 0 0
+
+            .social-likes__icon
+              display none
+
+        .social-likes__widget_facebook
+          .social-likes__button
+            background-position -67px 0
+
+        .social-likes__widget_twitter
+          .social-likes__button
+            background-position -100px 0
+
+        .social-likes__widget_mailru
+          .social-likes__button
+            background-position -166px 0
+
+        .social-likes__widget_vkontakte
+          .social-likes__button
+            background-position -2px 0
+
+        .social-likes__widget_odnoklassniki
+          .social-likes__button
+            background-position -34px 0
+
+        .social-likes__widget_plusone
+          .social-likes__button
+            background-position -133px 0
+
+        .social-likes__widget_pinterest
+          .social-likes__button
+            background-position -198px 0
+
+      form
+        display block
+        text-align center
+        padding-top 30px
+        padding-bottom 40px
+
+        .inp
+          display inline-block
+          vertical-align top
+          width 268px
+          height 40px
+          margin-right 12px
+          border 1px solid $cGray-l
+          border-radius 7px
+
+        .btn-green
+          width 188px
+          height 39px
+
+  .basket-delivery
+    .title
+      font-size 24px
+      color $cGray-l
+      display block
+      margin-bottom 15px
+
+    &__region
+      margin-top 9px
+      margin-bottom 36px
+
+      span
+        font-size 14px
+
+      span.title
+        display inline-block
+        vertical-align top
+
+      .jq-selectbox
+        display inline-block
+        vertical-align middle
+        margin-left 17px
+        margin-right 18px
+
+      .jq-selectbox__select
+        width 173px
+        height 28px
+        border 1px solid #cccccc
+        padding 0
+        border-radius 3px
+        box-shadow none
+        background #ffffff
+
+        .jq-selectbox__select-text
+          padding-left 13px
+          font-size 13px
+          color $cGray
+          font-weight 300
+          font-family $fRoboto
+
+        .jq-selectbox__trigger
+          border-left none
+
+          .jq-selectbox__trigger-arrow
+            width 4px
+            height 4px
+            border-bottom 2px solid #cccccc
+            border-left 2px solid #cccccc
+            border-right none
+            border-top none
+            transform rotate(-45deg)
+            -wevbkit-transform rotate(-45deg)
+            top 11px
+            right 9px
+
+      .jq-selectbox__dropdown
+        margin-top 0
+
+        ul
+          box-shadow none
+          padding 2px 0
+
+          li
+            display block
+            font-size 13px
+            color $cGray
+            font-weight 300
+            padding 10px 10px 3px
+            min-height 14px
+
+          li.optgroup
+            padding-top 10px
+
+          li.option
+            padding-left 25px
+            position relative
+            padding-top 3px
+            padding-bottom 3px
+
+          li.option:before
+            position absolute
+            content '-'
+            left 15px
+            top 2px
+
+          li:hover
+            background #fcfcfc
+
+          li.selected
+            color $cGreen
+            background transparent
+
+          li.selected:hover
+            background #fcfcfc
+            color $cGray
+
+    &__method
+      margin-bottom 50px
+
+      .title
+        margin-bottom 16px
+
+      label
+        display block
+        margin-bottom 12px
+
+        .psevdoradio
+          display inline-block
+          vertical-align middle
+          width 10px
+          height 10px
+          border-radius 10px
+          background #ffffff
+          border 1px solid $cGray-l
+          margin-right 12px
+          margin-top 8px
+
+          i
+            width 6px
+            height 5px
+            border-radius 7px
+            margin-top 2px
+            margin-left 2px
+            display block
+
+        span
+            display inline-block
+            vertical-align middle
+            font-size 14px
+            margin-top 6px
+
+        input:checked + .psevdoradio
+          border 1px solid $cGreen
+
+          i
+            background $cGreen
+
+        input:checked + .psevdoradio + span
+          color $cGreen
+
+    &__pick
+      padding-bottom 36px
+
+      .title
+        margin-bottom 21px
+
+      p
+        display block
+        margin-bottom 15px
+        font-size 16px
+        color $cBlack
+        font-weight normal
+
+      .map-container
+        display block
+        margin-top 47px
+
+        .map-aside
+          display inline-block
+          vertical-align top
+          width 285px
+
+          .map-form
+            display block
+            position relative
+            width 262px
+
+            .inp
+              width 262px
+              height 31px
+              border 1px solid $cGray-l
+
+            .send-map
+              position absolute
+              height 27px
+              border-left 1px solid $cGray-l
+              top 2px
+              right 0
+              width 33px
+              background url("../img/icon--zoom.png") no-repeat 50% 50%
+
+          ul
+            margin-top 25px
+
+            li
+              display block
+              font-weight 300
+              font-size 13px
+              padding-bottom 11px
+
+              img
+                width 19px
+                height 19px
+                border-radius 19px
+                display inline-block
+                vertical-align middle
+                margin-right 6px
+
+        .map
+          display inline-block
+          vertical-align top
+          width 745px
+          height 400px
+
+    &__comment
+      display block
+      padding-bottom 36px
+
+      span
+        display inline-block
+        vertical-align top
+        font-size 14px
+        color $cBlack
+        width 128px
+        margin-top 7px
+
+      textarea
+        resize none
+        display inline-block
+        vertical-align top
+        width 900px
+        height 90px
+        border 1px solid $cGray
+        padding-top 10px
+        padding-left 10px
+        border-radius 7px
+
+    &__total
+      display block
+      text-align left
+      padding-bottom 20px
+
+      span
+        display block
+        font-size 18px
+        color $cGray-l
+        line-height 24px
+
+        i
+          color $cRed
+          font-size 24px
+          display inline-block
+          vertical-align top
+          margin-right 5px
+          line-height 20px
+
+
+  .tabs__content
+    position absolute
+    left -9999999px
+
+  .tabs__content.active
+    position relative
+    left 0
+
+  .basket-adress
+    span
+      display inline-block
+      vertical-align top
+      width 125px
+      color $cBlack
+      font-size 14px
+      padding-top 4px
+
+    .form-col__el
+      display inline-block
+      vertical-align top
+      width 910px
+      padding-top 2px
+      padding-bottom 15px
+
+      textarea
+        border-radius 5px
+        padding-left 30px
+        width 762px
+        display inline-block
+        height 90px
+        padding-top 15px
+        font-size 12px
+        border 1px solid #cccccc
+
+      label
+        display inline-block
+        vertical-align top
+        margin-right 17px
+        position relative
+
+
+        .inp
+          border-radius 5px
+          height 30px
+          padding-left 30px
+          width 145px
+          font-size 12px
+          border 1px solid #cccccc
+
+        .inp.inp-city
+          padding-left 10px
+
+        .inp.inp-street
+          width 200px
+          padding-left 10px
+
+        .inp.inp-house
+          width 55px
+          padding-left 10px
+
+        .inp.inp-section
+          width 60px
+          padding-left 10px
+
+        .inp.inp-flat
+          width 55px
+          padding-left 10px
+
+        .jq-selectbox__select
+          width 183px
+
+      label.inp-name:before
+        position absolute
+        content ''
+        width 12px
+        height 13px
+        background url("../img/icon--person.png") no-repeat 0 0
+        bottom 9px
+        left 12px
+
+      label.inp-phone:before
+        position absolute
+        content ''
+        width 13px
+        height 13px
+        background url("../img/icon--phone.png") no-repeat 0 0
+        bottom 9px
+        left 12px
+
+      label.require:after
+        position absolute
+        content '*'
+        color #FF0000
+        font-family "Arial", sans-serif
+        bottom 4px
+        right 11px
+
+    .jq-selectbox__select
+        width 243px
+        height 28px
+        border 1px solid #cccccc
+        padding 0
+        border-radius 5px
+        box-shadow none
+        background #ffffff
+
+      .jq-selectbox__select-text
+        padding-left 13px
+        font-size 13px
+        color $cGray
+        font-weight 300
+        font-family $fRoboto
+
+      .jq-selectbox__trigger
+        border-left none
+
+        .jq-selectbox__trigger-arrow
+          width 4px
+          height 4px
+          border-bottom 2px solid #cccccc
+          border-left 2px solid #cccccc
+          border-right none
+          border-top none
+          transform rotate(-45deg)
+          -wevbkit-transform rotate(-45deg)
+          top 11px
+          right 9px
+
+      .jq-selectbox__dropdown
+        margin-top 0
+
+        ul
+          box-shadow none
+          padding 2px 0
+
+          li
+            display block
+            font-size 13px
+            color $cGray
+            font-weight 300
+            padding 10px 10px 9px
+            min-height 14px
+
+          li.optgroup
+            padding-top 10px
+
+          li.option
+            padding-left 25px
+            position relative
+            padding-top 3px
+            padding-bottom 3px
+
+          li.option:before
+            position absolute
+            content '-'
+            left 15px
+            top 2px
+
+          li:hover
+            background #87be70
+            color #fff
+
+          li.selected
+            color $cGreen
+            background transparent
+
+          li.selected:hover
+            background #87be70
+            color #fff

@@ -1,0 +1,75 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .page-bonus
+
+        ul.breadcrumbs
+            li
+                a(href="") Главная страница
+            li
+                a(href="") Личная страница
+            li
+                span Бонусная программа
+
+        section.bonus__status
+
+            h4 Бонусная программа
+
+            span.bonus__status--current Ваша скидка: 0%
+
+            .rope-scheme
+
+                ul.bonus__status--rope
+                    li
+                        span 0%
+                    li
+                        span 3%
+                    li
+                        span 5%
+                    li
+                        span 7%
+                    li
+                        span 10%
+
+                div(style="width: 10%").bonus__status--rope-color
+                    span 10 000 руб. до следующего уровня
+
+        section.bonus__info
+            ul
+                li
+                    span.bonus__info--level
+                        i 1
+                        = " уровень лояльности"
+
+                    span.bonus__info--title При покупке на сумму более  10 000 руб.   -   скидка 3%
+                    p Краткая инструкция. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+
+                li
+                    span.bonus__info--level
+                        i 2
+                        = " уровень лояльности"
+
+                    span.bonus__info--title При покупке на сумму более  20 000 руб.   -   скидка 5%
+                    p Краткая инструкция. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+
+                li
+                    span.bonus__info--level
+                        i 3
+                        = " уровень лояльности"
+                    span.bonus__info--title При покупке на сумму более  40 000 руб.   -   скидка 7%
+                    p Краткая инструкция. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+
+                li
+                    span.bonus__info--level
+                        i 4
+                        = " уровень лояльности"
+                    span.bonus__info--title При покупке на сумму более  60 000 руб.   -   скидка 10%
+                    p Краткая инструкция. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+
+            a(href="../pagePopup/popup-registration.html" class='fancybox.ajax').btn-green.fancy Регистрация
+
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/bonus-programm.jpg",opacity: 0.5,top: 8,left: 0,center: false,clip: true,show: false});});

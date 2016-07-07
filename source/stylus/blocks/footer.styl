@@ -1,0 +1,155 @@
+.psevdofooter
+  height 220px
+  position relative
+
+
+.footer
+  height 220px
+  width 1124px
+  left 50%
+  margin-left -562px
+  right 0
+  bottom 4px
+  position absolute
+  background url("../img/bg__footer.png") no-repeat 50% 0
+
+  .justifyed
+    padding-left 54px
+    padding-right 30px
+    padding-top 29px
+
+  &--catalog,
+  &--info,
+  &__cotacts
+    display inline-block
+    vertical-align top
+
+  &--catalog
+    width 322px
+
+    span
+      display block
+      font-family $fLobster
+      font-size 21px
+      color $cRed
+      padding-bottom 10px
+
+    ul
+      display block
+      width 260px
+      li
+        display inline-block
+        vertical-align top
+        padding-bottom 12px
+        text-align left
+
+        a
+          font-weight 300
+          color $cRed
+          font-size 14px
+          text-decoration underline
+
+        a:hover
+          text-decoration none
+
+      li:nth-child(1),
+      li:nth-child(3)
+        width 110px
+
+      li:nth-child(2),
+      li:nth-child(4)
+        width 150px
+
+  &--info
+    width 330px
+
+    span
+      display block
+      font-family $fLobster
+      font-size 21px
+      color $cBlack
+      padding-bottom 10px
+
+    ul
+      width 330px
+      display block
+
+      li
+        display inline-block
+        vertical-align top
+        padding-bottom 12px
+        text-align left
+
+        a
+          font-weight 300
+          color $cBlack
+          font-size 14px
+          text-decoration underline
+
+        a:hover
+          text-decoration none
+
+      li:nth-child(1),
+      li:nth-child(3),
+      li:nth-child(5)
+        width 250px
+
+      li:nth-child(2),
+      li:nth-child(4),
+      li:nth-child(6)
+        width 80px
+
+  &__cotacts
+    text-align right
+    width 300px
+    margin-top 7px
+
+    &-phone
+      font-size 30px
+      font-weight 500
+      line-height 22px
+      margin-right 1px
+      margin-bottom 8px
+      display block
+
+    &--social
+      display block
+      padding-top 5px
+
+      span
+        display inline-block
+        vertical-align middle
+        font-weight 300
+        margin-right 7px
+        font-size 14px
+
+      ul
+        display inline-block
+        vertical-align middle
+
+        li
+          display inline-block
+          vertical-align top
+          margin-right 4px
+          width 24px
+          height 23px
+
+          a
+            display block
+            width 24px
+            height 23px
+            background url("../img/sprite--social.png") no-repeat 0 0
+
+          a.social-fb
+            background-position 0 0
+          a.social-tw
+            background-position -28px 0
+          a.social-vk
+            background-position -56px 0
+
+    &--copyright
+      display block
+      margin-top 8px
+      margin-right 6px
+      color $cGray-l
+      font-size 11px

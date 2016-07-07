@@ -1,0 +1,106 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .page-basket
+        ul.basket-nav
+            li.basket-nav__el
+                span Корзина
+            li.basket-nav__el
+                span Контактная информация
+            li.basket-nav__el
+                span Доставка и самовывоз
+            li.basket-nav__el.active
+                span Подтверждение
+            li.basket-nav__el
+                span Готово
+
+        h4 Подтверждение
+        span.basket-notification Пожалуйста, внимательно проверьте всю информацию о заказе и точный адрес доставки:
+
+        section.basket-confirmation
+            table(cellpadding='0' cellspacing="0" ).data-list
+                tr.data-list__el
+                    td.data-list__el--title
+                        span Товары
+                    td.data-list__el--data
+                        span 5 товаров на сумму 6 750 р.
+
+                tr.data-list__el
+                    td.data-list__el--title
+                        span Контактная информация
+                    td.data-list__el--data
+                        span +7 (911) 234-5478
+                        span Антон Макаров
+                        span username@example.com
+
+                tr.data-list__el
+                    td.data-list__el--title
+                        span Способ получения
+                    td.data-list__el--data
+                        span Курьерская служба
+
+                tr.data-list__el
+                    td.data-list__el--title
+                        span Информация о доставке
+                    td.data-list__el--data
+                        span Индекс, Регион, Город, Улица, Дом, Корпус, дата и время доставки
+
+                tr.data-list__el
+                    td.data-list__el--title
+                        span Стоимость доставки
+                    td.data-list__el--data
+                        span 500 р.
+
+                tr.data-list__el
+                    td.data-list__el--title
+                        span Итого к оплате
+                    td.data-list__el--data
+                        span 7 250 р.
+
+            form(action="" method="post")
+                .basret--payment
+                    span.title Способ оплаты
+
+                    label
+                        input(type="radio" name="basret--payment" value="01" checked).hidden-block
+                        div
+                            img(src="../../../img/icon--cash-gray.png" alt /).gray
+                            img(src="../../../img/icon--cash-green.png" alt /).green
+
+                            .psevdoradio
+                                i
+
+                            span Наличными при получении
+
+                    label
+                        input(type="radio" name="basret--payment" value="01").hidden-block
+                        div
+                            img(src="../../../img/icon--card-gray.png" alt /).gray
+                            img(src="../../../img/icon--card-green.png" alt /).green
+
+                            .psevdoradio
+                                i
+
+                            span Банковской картой, электронными деньгами, через интернет-банки и терминалы
+
+                    span.notification
+                        i Внимание!
+                        = " Для Вашей безопасности и удобства оплатить заказ Вы сможете только после его подтверждения!"
+
+                    .basret--payment__agreement
+                        label
+                            input(type="checkbox" name="greement" value="01").hidden-block.inp-greement
+                            .psevdocheckbox
+                                    i
+
+                            span Да, все верно и я согласен с
+                                a пользовательским соглашением
+
+        .basket-pagination
+            a(href="").basket-pagination__prev Предыдущий шаг
+            a(href="").btn-green.basket-pagination__oform.disabled Оформить заказ
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/basket-4.jpg",opacity: 0.5,top: -14,left: 0,center: false,clip: true,show: false});});

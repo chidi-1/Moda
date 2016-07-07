@@ -1,0 +1,15 @@
+.popup--wrap.popup-sm
+
+    .popup--inner
+
+        .justifyed
+            h2 Забыли пароль?
+
+        form(action="../../../js/ajax/forgot-pass.php" method="post").main-form.forgot-form
+            label
+                input(type="text" name="mail" placeholder="Ваш адрес электронной почты" required).inp.required.input-mail
+
+            label.result
+                a(href="").btn-green.js--form-submit Восстановить пароль
+                span.error-text
+                a(href="../pagePopup/pass-ok.html" class="fancybox.ajax").fancy.hidden-block.js--pass-ok

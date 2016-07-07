@@ -1,0 +1,120 @@
+.btn
+    box-sizing  border-box
+    width 100%
+    font-size 15px
+    text-transform uppercase 
+    text-align center
+    border none
+    height 44px 
+    display block 
+    line-height 44px 
+    color #fff
+    cursor pointer 
+    background none
+    transition background-color .4s ease-in-out, color .4s ease-in-out
+    border-radius 22px 
+    padding 0 
+    outline none
+    background $cBlue 
+    font-weight bold 
+    
+    &:hover
+        text-decoration none     
+        background $cGreen
+        color #fff  
+        
+    &_inline
+        display inline-block
+        width auto
+        padding 0 30px
+
+    &_disabled,
+    &[disabled]
+        background #0c3a48
+        color #53747e  
+        cursor default
+
+.btn-green
+  display inline-block
+  vertical-align top
+  box-sizing  border-box
+  background #97cf7f
+  background -moz-linear-gradient(top,  #97cf7f 0%, #74ab5f 100%)
+  background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#97cf7f), color-stop(100%,#74ab5f))
+  background -webkit-linear-gradient(top,  #97cf7f 0%,#74ab5f 100%)
+  background -o-linear-gradient(top,  #97cf7f 0%,#74ab5f 100%)
+  background -ms-linear-gradient(top,  #97cf7f 0%,#74ab5f 100%)
+  background linear-gradient(to bottom,  #97cf7f 0%,#74ab5f 100%)
+  box-shadow  0 2px 0 #006600
+  height 40px
+  line-height 42px
+  color #fff
+  font-size 16px
+  text-transform uppercase
+  cursor pointer
+  border-radius 10px
+  width 140px
+  text-align center
+  transition background 0.2s, box-shadow 0.2s
+  -webkit-transition background 0.2s, box-shadow 0.2s
+
+.btn-green:hover
+  box-shadow  0 2px 0 #146600
+  background #69b56a
+  background -moz-linear-gradient(top,  #69b56a 0%, #408546 100%)
+  background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#69b56a), color-stop(100%,#408546))
+  background -webkit-linear-gradient(top,  #69b56a 0%,#408546 100%)
+  background -o-linear-gradient(top,  #69b56a 0%,#408546 100%)
+  background -ms-linear-gradient(top,  #69b56a 0%,#408546 100%)
+  background linear-gradient(to bottom,  #69b56a 0%,#408546 100%)
+
+.btn-blue
+  display inline-block
+  vertical-align top
+  box-sizing  border-box
+  background #3bb6e0
+  background -moz-linear-gradient(top,  #3bb6e0 0%, #2da1ce 100%)
+  background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3bb6e0), color-stop(100%,#2da1ce))
+  background -webkit-linear-gradient(top,  #3bb6e0 0%,#2da1ce 100%)
+  background -o-linear-gradient(top,  #3bb6e0 0%,#2da1ce 100%)
+  background -ms-linear-gradient(top,  #3bb6e0 0%,#2da1ce 100%)
+  background linear-gradient(to bottom,  #3bb6e0 0%,#2da1ce 100%)
+  box-shadow  0 2px 0 #1d7596
+  height 40px
+  line-height 42px
+  color #fff
+  font-size 16px
+  text-transform uppercase
+  cursor pointer
+  border-radius 10px
+  width 140px
+  text-align center
+
+
+.btn--border-green
+  display inline-block
+  vertical-align top
+  border 1px solid $cGreen-l
+  color $cGreen-l
+  font-size 16px
+  padding 12px 34px
+  cursor pointer
+  border-radius 10px
+
+.btn--border-green:hover
+  border 1px solid $cGreen
+  color $cGreen
+
+.btn--border-red
+  display inline-block
+  vertical-align top
+  border 1px solid $cRed
+  color $cRed
+  font-size 16px
+  padding 12px 34px
+  cursor pointer
+  border-radius 10px
+
+.btn--border-red:hover
+  border 1px solid $cPink
+  color $cPink

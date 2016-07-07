@@ -1,0 +1,41 @@
+.popup--wrap.popup-md
+
+    .popup--inner.grid
+        .grid-item
+            .justifyed
+                a(href="popup-enter.html" class="fancybox.ajax").fancy.right-link Вход
+                h2 Регистрация
+
+            form(action="../../../js/ajax/reg.php" method="post").main-form.reg-form
+                label
+                    input(type="text" name="name" placeholder="Ваше имя" required).inp.required
+
+                label
+                    input(type="text" name="surname" placeholder="Ваша фамилия" required).inp.required
+
+                label
+                    input(type="text" name="mail" placeholder="Ваш e-mail адрес" required).inp.required.input-mail
+
+                label
+                    input(type="text" name="password" placeholder="Ваш пароль" required).inp.required.input-pass
+
+                label
+                    input(type="text" name="password-an" placeholder="Введите пароль еще раз" required).inp.required.input-pass-an
+
+                label.result
+                    a(href="").btn-green.js--form-submit Зарегистрироваться
+                    span.error-text
+
+        .grid-item
+            .popup-social
+                span Войдите при помощи социальных сетей
+
+                ul
+                    li
+                        a(href="").social-fb
+                    li
+                        a(href="").social-tw
+                    li
+                        a(href="").social-vk
+                    li
+                        a(href="").social-gl

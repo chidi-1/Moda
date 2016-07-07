@@ -1,0 +1,69 @@
+block vars
+
+header.header
+
+    a(href="").js--scroll-top.scroll-top Вверх
+
+    .justifyed.grid
+
+        .header-logo.grid-item
+            a(href = "")
+                img(src = "../../../img/logo--header.png" alt).
+                span Интернет-магазин Итальянских и Американских тканей
+
+        .header__contacts.grid-item
+            div
+                a(href="tel:88007777131").header__contacts-phone +7 800 777 71 31
+                span Бесплатный звонок по всей России
+
+            div
+                a(href="tel:84957717131").header__contacts-phone +7 495 771 71 31
+                span Для звонков из Москвы и области
+
+            div
+                a(href="").header__contacts-info Контактная информация
+
+        .header__links.grid-item
+            a(href="../pagePopup/popup-enter.html" class="fancybox.ajax").header__links-ent.fancy
+                img(src="../../../img/icon--enter.png" alt /)
+                span Вход
+            a(href="../pagePopup/popup-registration.html" class="fancybox.ajax").header__links-reg.fancy
+                img(src="../../../img/icon--reg.png" alt /)
+                span Регистрация
+            a(href="").header__links-comp.empty
+                img(src="../../../img/icon--comp.png" alt /)
+                span Сравнение
+                i 9
+            a(href="").header__links-bas
+                img(src="../../../img/icon--bas.png" alt /)
+                span Корзина
+                i 99
+
+nav
+
+    .justifyed
+
+        ul.main-nav
+            li.main-nav__el.main-nav__el-red
+                a(href="") Ткани
+            li.main-nav__el.main-nav__el-red
+                a(href="") Фурнитура
+            li.main-nav__el.main-nav__el-red
+                a(href="") Журналы и выкройки
+            li.main-nav__el.main-nav__el-red
+                a(href="") Ткани оптом
+            li.main-nav__el.main-nav__el-green
+                a(href="") Доставка и оплата
+            li.main-nav__el.main-nav__el-green
+                a(href="") О нас
+            li.main-nav__el.main-nav__el-green
+                a(href="") Блог
+
+        .search
+            a(href="").search--icon.js--search-open
+                i.icon-search
+
+            form(action="" method="post")
+                input(type="text" name="search" placeholder="Введите название или артикул").inp
+                label
+                    input(type="submit" value="")

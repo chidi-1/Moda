@@ -1,0 +1,51 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .page-basket
+        ul.basket-nav
+            li.basket-nav__el
+                span Корзина
+            li.basket-nav__el
+                span Контактная информация
+            li.basket-nav__el.
+                span Доставка и самовывоз
+            li.basket-nav__el
+                span Подтверждение
+            li.basket-nav__el.active
+                span Готово
+
+        section.basket-ready
+            span.title Номер вашего заказа:
+                i 145-254
+
+            span.instruction На указанный Вами адрес
+                i %boltikov_ivan@mail.ru%
+                = " мы отправили дальнейшие инструкции."
+
+            p Душевно благодарим Вас за&nbsp;покупку и&nbsp;за&nbsp;то, что&nbsp;Вы нам доверяете! Наш менеджер в&nbsp;кратчайшие сроки обработает Ваш заказ, после чего&nbsp;Вы сможете его оплатить. Очень надеемся, что оправдали Ваши лучшие ожидания и&nbsp;будем рады видеть Вас снова!
+
+            .basket-ready__thanks
+                img(src='../../../img/img--thanks.jpg' alt /).thanks
+
+                p.social Если вам понравился наш магазин, расскажите о нас друзьям
+                    div(data-counters="no" data-title="Заголовок").social-likes
+                        div.facebook(title="Поделиться ссылкой на Фейсбуке")
+                        div.twitter(data-via="Заголовок твиттера" data-related=" Описание твиттера" title="Поделиться ссылкой в Твиттере")
+                        div.mailru(title="Поделиться ссылкой в Моём мире")
+                        div.vkontakte(title="Поделиться ссылкой во Вконтакте")
+                        div.odnoklassniki(title="Поделиться ссылкой в Одноклассниках")
+                        div.plusone(title="Поделиться ссылкой в Гугл-плюсе")
+                        div.pinterest(title="Поделиться картинкой на Пинтересте" data-media="урл картинки")
+
+                p Чтобы быть в&nbsp;курсе проведения нами акций или знать о&nbsp;поступлении новинок,рекомендуем подписаться на&nbsp;новости.
+                    br
+                    = " Это займет несколько секунд, а Вы всегда будете получать актуальную информацию."
+
+                form(action="" method="post")
+                    input(type="text" name="subs_mail" placeholder="Ваш e-mail адрес").inp.inp-mail.required
+                    a(href="").btn-green.js--sens-subs Подписаться
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/basket-5.jpg",opacity: 0.5,top: -422,left: 107,center: false,clip: true,show: false});});

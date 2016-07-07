@@ -1,0 +1,214 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .page-privat
+
+        section.bonus__status
+
+            h1 Личный кабинет
+
+            span.bonus__status--current Ваша скидка: 0%
+            a(href="").bonus__status--link  Подробнее про бонусную программу
+
+            .rope-scheme
+
+                ul.bonus__status--rope
+                    li
+                        span 0%
+                    li
+                        span 3%
+                    li
+                        span 5%
+                    li
+                        span 7%
+                    li
+                        span 10%
+
+                div(style="width: 10%").bonus__status--rope-color
+                    span 10 000 руб. до следующего уровня
+
+        .tabs
+            ul.tabs__caption
+                li Список заказов
+                li Ваши адреса
+                li Подписки
+                li.active Изменить пароль
+                li Изменить e-mail
+
+            .tabs__content.load-container
+                table(cellspacing="0").order-table
+                    tr
+                        th.table-date Дата
+                        th.table-number № заказа
+                        th.table-list Список товаров
+                        th.table-summ Сумма
+                        th.table-status Состояние
+                        th.table-delivery Доставка
+                        th.table-payment Способ оплаты
+
+                    tr
+                        td.table-date 02.03.2015
+                        td.table-number 206.106.006
+                        td.table-list
+                            a(href="").icon-search
+
+                            ul
+                                li 1. Американский хлопок синий х 10
+                                li 2. Кмперная лента 20 мм синяя х10
+                        td.table-summ 3500р.
+                        td.table-status.c_gray Не обработан
+                            i ?
+                        td.table-delivery Самовывоз  г. Санкт-Петербург
+                        td.table-payment
+
+                    tr
+                        td.table-date 02.03.2015
+                        td.table-number 206.106.006
+                        td.table-list
+                            ul
+                                li 1. Американский хлопок синий х 10
+                        td.table-summ 23 500р.
+                        td.table-status.c_pink В обработке
+                            i ?
+                        td.table-delivery Курьерская доставка
+                            br
+                            = " Завтра с 14.04.15 с 12 до 20"
+                        td.table-payment Наложный платеж
+
+                    tr
+                        td.table-date 02.03.2015
+                        td.table-number 206.106.006
+                        td.table-list
+                            ul
+                                li 1. Американский хлопок синий х 10
+                                li 2. Кмперная лента 20 мм синяя х10
+
+                            a(href="").icon-search
+                        td.table-summ 23 500р.
+                        td.table-status.c_pink Ожидание оплаты
+                            i ?
+                        td.table-delivery
+                            a(href="") Выберите способ доставки
+                        td.table-payment
+                            a(href="") Выберите способ оплаты
+
+                    tr
+                        td.table-date 02.03.2015
+                        td.table-number 206.106.006
+                        td.table-list
+                            a(href="").icon-search
+
+                            ul
+                                li 1. Американский хлопок синий х 10
+                                li 2. Кмперная лента 20 мм синяя х10
+                        td.table-summ 23 500р.
+                        td.table-status.c_green Доставляется
+                        td.table-delivery Почта России
+                            br
+                            = " 123456798354RU"
+                        td.table-payment Наложный платеж
+
+                    tr.disabled
+                        td.table-date 02.03.2015
+                        td.table-number 206.106.006
+                        td.table-list
+                            a(href="").icon-search
+
+                            ul
+                                li 1. Американский хлопок синий х 10
+                                li 2. Кмперная лента 20 мм синяя х10
+
+                        td.table-summ 23 500р.
+                        td.table-status.c_green Доставляется
+                        td.table-delivery Почта России
+                            br
+                            = " 123456798354RU"
+                        td.table-payment Наложный платеж
+
+                .privat__more
+                    a(href="" data-url="../../../js/ajax/show-more-table.php" data-metod="post").js--show-table Показать еще 20 (Осталось 241)
+
+            .tabs__content
+                form(action="" method="post").delivery-form.main-form
+                    h5 Адреса доставки
+
+                    .filter-wrap
+                        .filter
+                            .form-col__el
+                                label.inp-name.require
+                                    span Имя
+                                    input(type="text" name="name" required placeholder="Антон").inp.required
+
+                                label.inp-name.require
+                                    span Фамилия
+                                    input(type="text" name="surname" required placeholder="Макаров").inp.required
+
+                                label.inp-phone.require
+                                    span Телефон
+                                    input(type="text" name="phont" required placeholder="+7 (921) 234-2345").inp.required.inp-phone
+
+                            .form-col__el
+                                label
+                                    select(name="region").inp-styled
+                                        option(value="region__01" selected).filter-default Москва
+                                        option(value="region__02") Саратовская область
+
+                                label.require
+                                    input(type="text" name="city" required placeholder="Москва").inp.required.inp-city
+
+                                label.require
+                                    input(type="text" name="street" required placeholder="пр. Ленина").inp.required.inp-street
+
+                                label.require
+                                    input(type="text" name="house" required placeholder="45").inp.required.inp-house
+
+                                label
+                                    input(type="text" name="section" placeholder="45").inp.inp-section
+
+                                label
+                                    input(type="text" name="flat" required placeholder="45").inp.required.inp-flat
+
+                            .form-col__el.form-col__el--button
+                                a(href="").btn-green.js--form-submit Сохранить
+
+                        p.form-comment Пара слов о том, для чего нужны эти данные и как они будут использованы
+
+                    .adress-add
+                        a(data-url="../../../js/ajax/add-adress.html" data-method="post").js--add-adress +
+                            span другой адрес
+
+                    .adress-submit
+                        a(href="").btn-green.js--form-submit Сохранить
+
+            .tabs__content
+            .tabs__content
+                form(action="../../../js/ajax/new-pass.php" method="post").pass-form.main-form
+                    h5 Смена пароля
+
+                    input(type="text" name='old_pass' placeholder="Введите текущий пароль" required).inp.required
+                    input(type="text" name='new_pass' placeholder="Введите новый пароль" required).inp.required
+                    input(type="text" name='new_pass_two' placeholder="Повторите новый пароль" required).inp.required
+
+                    span.error-text
+
+                    a(href="").btn-green.js--form-submit Сохранить
+
+                    a(href="../pagePopup/new-pass-ok.html" class="fancybox.ajax").fancy.hidden-block.js--new-pass-ok
+
+            .tabs__content.active
+                form(action="../../../js/ajax/new-pass.php" method="post").new-mail-form.main-form
+                    h5 Смена e-mail
+
+                    label.require.inp-mail
+                        input(type="text" name='new_mail' placeholder="username@example.com" required).inp.required.inp-mail
+
+                    span.error-text
+
+                    a(href="").btn-green.js--form-submit Сохранить
+
+                    a(href="../pagePopup/new-mail-ok.html" class="fancybox.ajax").fancy.hidden-block.js--new-pass-ok
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/private-office.jpg",opacity: 0.5,top: 1,left: 256,center: false,clip: true,show: false});});

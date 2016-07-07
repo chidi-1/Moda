@@ -1,0 +1,58 @@
+.page-cloth
+  padding 0 20px
+
+  .filter-form
+    white-space nowrap
+
+    .filter-tabs
+      display inline-block
+      vertical-align top
+      white-space normal
+      width 165px
+      margin-right -4px
+      position relative
+      z-index 5
+      margin-top 40px
+
+      .inp-hidden
+        display none
+
+      span
+        display block
+        border-radius  5px 0 0 5px
+        margin-bottom -1px
+        border 1px dashed #ebebeb
+        border-right 1px dashed $cGreen
+        background #fcfcfc
+        text-align center
+        height 40px
+        line-height 42px
+        font-size 16px
+        color $cGreen
+        cursor pointer
+
+      input:checked + span
+        border-color $cGreen
+        border-right 1px solid #f9f9f9
+        position relative
+        z-index 5
+
+    .filter
+      display inline-block
+      vertical-align top
+      width 808px
+      border-radius 0 5px 0 0
+      white-space normal
+
+      .form-col
+        width 175px
+
+        .psevdoselect
+          width 175px
+
+          .color-list
+            width 162px
+
+        .jq-selectbox__select
+          width 175px
+

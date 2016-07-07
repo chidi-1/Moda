@@ -1,0 +1,33 @@
+.cbx
+    position absolute
+    left -99999px
+    
+    &:checked
+        & + .cbxLbl
+            &:before
+                background $cBlue 
+                background-image url('/static/img/svg/cbx_checked.svg')
+                background-position center center
+                background-repeat no-repeat  
+                background-size 8px auto 
+
+.cbxLbl
+    overflow hidden
+    
+    &:before 
+        content "" 
+        display block 
+        float left
+        box-sizing border-box  
+        width 18px
+        height 18px
+        border 1px solid $cBlue 
+        float left  
+        border-radius 4px  
+        cursor pointer
+        margin-right 10px 
+        
+.cbxText
+    overflow hidden
+    line-height 18px  
+    display inline-block

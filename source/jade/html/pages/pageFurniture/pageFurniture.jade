@@ -1,0 +1,441 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .page-furniture
+        ul.breadcrumbs
+            li
+                a(href="") Главная страница
+            li
+                span Фурнитура
+
+        h1 Фурнитура
+
+        p Радиант, на&nbsp;первый взгляд, неустойчив. Соединение последовательно. Многие кометы имеют два хвоста, однако кульминация прочно колеблет узел&nbsp;&mdash; это солнечное затмение предсказал ионянам Фалес Милетский. Противостояние притягивает астероидный возмущающий фактор, данное соглашение было заключено на&nbsp;2-й международной конференции &laquo;Земля из&nbsp;космоса&nbsp;&mdash; наиболее эффективные решения&raquo;.
+
+        .tabs
+            form(action="../../../js/ajax/furniture.php" method="post")
+                .tabs__caption
+                    ul.tabs__caption-list
+                        li.active
+                            label
+                                input(type="radio" name="furniture_type" value="01")
+                                span Для застежки
+
+                        li
+                            label
+                                input(type="radio" name="furniture_type" value="02")
+                                span Для раскроя
+                        li
+                            label
+                                input(type="radio" name="furniture_type" value="03")
+                                span Для хорошей формы
+                        li
+                            label
+                                input(type="radio" name="furniture_type" value="04")
+                                span Для застежки
+
+                        li
+                            label
+                                input(type="radio" name="furniture_type" value="05")
+                                span Вся фурнитура
+
+                    .tabs__caption-filter
+                        .furniture-filter.active
+                            label
+                                input(type="checkbox" checked name="furniture_01" value="01")
+                                span Застежки и пряжки
+                            label
+                                input(type="checkbox" checked name="furniture_01" value="02")
+                                span Кнопки и крючки
+                            label
+                                input(type="checkbox" checked name="furniture_01" value="03")
+                                span Люверсы и блочки
+                            label
+                                input(type="checkbox" checked name="furniture_01" value="04")
+                                span Молнии
+
+                        .furniture-filter
+                            label
+                                input(type="checkbox" checked disabled name="furniture_02" value="01")
+                                span Для раскроя1
+                            label
+                                input(type="checkbox" checked disabled name="furniture_02" value="02")
+                                span Для раскроя2
+                            label
+                                input(type="checkbox" checked disabled name="furniture_02" value="03")
+                                span Для раскроя3
+                            label
+                                input(type="checkbox" checked disabled name="furniture_02" value="04")
+                                span Для раскроя4
+
+                        .furniture-filter
+                            label
+                                input(type="checkbox" checked disabled name="furniture_03" value="01")
+                                span Для хорошей формы1
+                            label
+                                input(type="checkbox" checked disabled name="furniture_03" value="02")
+                                span Для хорошей формы2
+
+            .tabs__content.load-container.active
+                ul.item-list
+                    li.item-list__el
+                        .visible
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-1.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Джерси
+                                span.item-list__el__ifno-price 12
+                                    i o
+                                span.item-list__el__ifno-measure 0,1 м
+                                    i 2
+
+                        .hidden
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-1.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Джерси
+                                span.item-list__el__ifno-price 12
+                                    i o
+                                span.item-list__el__ifno-measure 0,1 м
+                                    i 2
+                            .item-list__el__buttons
+                                form(action="../../../js/ajax/add-basket.php" method="post")
+                                    input(type="hidden" name="item_id" value="item_01")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    a.btn-green.js--add-basket В корзину
+                                    .popup
+                                        span Добавлено
+                                        a Перейти в корзину
+                            .item-list__el__links
+                                a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                                a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_01").btn-green.js--add-compare Сравнить
+
+
+                    li.item-list__el
+                        .visible
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-1.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Подкладочная ткань
+                                span.item-list__el__ifno-price 350
+                                    i o
+                                span.item-list__el__ifno-measure м
+                                    i 2
+
+                        .hidden
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-1.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Подкладочная ткань
+                                span.item-list__el__ifno-price 350
+                                    i o
+                                span.item-list__el__ifno-measure м
+                                    i 2
+                            .item-list__el__buttons
+                                form(action="../../../js/ajax/add-basket.php" method="post")
+                                    input(type="hidden" name="item_id" value="item_02")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    a.btn-green.js--add-basket В корзину
+                                    .popup
+                                        span Добавлено
+                                        a Перейти в корзину
+                            .item-list__el__links
+                                a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                                a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_02").btn-green.js--add-compare Сравнить
+
+                .furniture__more
+                    a(href="" data-type-magazin="01" data-url="../../../js/ajax/show-more.php" data-metod="post").js--show-more Показать еще 20 (Осталось 241)
+
+            .tabs__content.load-container
+                ul.item-list
+                    li.item-list__el
+                        .visible
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-2.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Джерси
+                                span.item-list__el__ifno-price 12
+                                    i o
+                                span.item-list__el__ifno-measure 0,1 м
+                                    i 2
+
+                        .hidden
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-2.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Джерси
+                                span.item-list__el__ifno-price 12
+                                    i o
+                                span.item-list__el__ifno-measure 0,1 м
+                                    i 2
+                            .item-list__el__buttons
+                                form(action="../../../js/ajax/add-basket.php" method="post")
+                                    input(type="hidden" name="item_id" value="item_01")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    a.btn-green.js--add-basket В корзину
+                                    .popup
+                                        span Добавлено
+                                        a Перейти в корзину
+                            .item-list__el__links
+                                a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                                a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_01").btn-green.js--add-compare Сравнить
+
+
+                    li.item-list__el
+                        .visible
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-2.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Подкладочная ткань
+                                span.item-list__el__ifno-price 350
+                                    i o
+                                span.item-list__el__ifno-measure м
+                                    i 2
+
+                        .hidden
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-2.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Подкладочная ткань
+                                span.item-list__el__ifno-price 350
+                                    i o
+                                span.item-list__el__ifno-measure м
+                                    i 2
+                            .item-list__el__buttons
+                                form(action="../../../js/ajax/add-basket.php" method="post")
+                                    input(type="hidden" name="item_id" value="item_02")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    a.btn-green.js--add-basket В корзину
+                                    .popup
+                                        span Добавлено
+                                        a Перейти в корзину
+                            .item-list__el__links
+                                a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                                a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_02").btn-green.js--add-compare Сравнить
+
+                .furniture__more
+                    a(href="" data-type-magazin="02" data-url="../../../js/ajax/show-more.php" data-metod="post").js--show-more Показать еще 20 (Осталось 241)
+
+
+            .tabs__content.load-container
+                ul.item-list
+                    li.item-list__el
+                        .visible
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-1.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Джерси
+                                span.item-list__el__ifno-price 12
+                                    i o
+                                span.item-list__el__ifno-measure 0,1 м
+                                    i 2
+
+                        .hidden
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-1.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Джерси
+                                span.item-list__el__ifno-price 12
+                                    i o
+                                span.item-list__el__ifno-measure 0,1 м
+                                    i 2
+                            .item-list__el__buttons
+                                form(action="../../../js/ajax/add-basket.php" method="post")
+                                    input(type="hidden" name="item_id" value="item_01")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    a.btn-green.js--add-basket В корзину
+                                    .popup
+                                        span Добавлено
+                                        a Перейти в корзину
+                            .item-list__el__links
+                                a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                                a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_01").btn-green.js--add-compare Сравнить
+
+
+
+                    li.item-list__el
+                        .visible
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-2.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Подкладочная ткань
+                                span.item-list__el__ifno-price 350
+                                    i o
+                                span.item-list__el__ifno-measure м
+                                    i 2
+
+                        .hidden
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-2.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Подкладочная ткань
+                                span.item-list__el__ifno-price 350
+                                    i o
+                                span.item-list__el__ifno-measure м
+                                    i 2
+                            .item-list__el__buttons
+                                form(action="../../../js/ajax/add-basket.php" method="post")
+                                    input(type="hidden" name="item_id" value="item_02")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    a.btn-green.js--add-basket В корзину
+                                    .popup
+                                        span Добавлено
+                                        a Перейти в корзину
+                            .item-list__el__links
+                                a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                                a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_02").btn-green.js--add-compare Сравнить
+
+                    li.item-list__el
+                        .visible
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-1.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Джерси
+                                span.item-list__el__ifno-price 12
+                                    i o
+                                span.item-list__el__ifno-measure 0,1 м
+                                    i 2
+
+                        .hidden
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-1.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Джерси
+                                span.item-list__el__ifno-price 12
+                                    i o
+                                span.item-list__el__ifno-measure 0,1 м
+                                    i 2
+                            .item-list__el__buttons
+                                form(action="../../../js/ajax/add-basket.php" method="post")
+                                    input(type="hidden" name="item_id" value="item_01")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    a.btn-green.js--add-basket В корзину
+                                    .popup
+                                        span Добавлено
+                                        a Перейти в корзину
+                            .item-list__el__links
+                                a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                                a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_01").btn-green.js--add-compare Сравнить
+
+
+                    li.item-list__el
+                        .visible
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-2.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Подкладочная ткань
+                                span.item-list__el__ifno-price 350
+                                    i o
+                                span.item-list__el__ifno-measure м
+                                    i 2
+
+                        .hidden
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-2.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Подкладочная ткань
+                                span.item-list__el__ifno-price 350
+                                    i o
+                                span.item-list__el__ifno-measure м
+                                    i 2
+                            .item-list__el__buttons
+                                form(action="../../../js/ajax/add-basket.php" method="post")
+                                    input(type="hidden" name="item_id" value="item_02")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    a.btn-green.js--add-basket В корзину
+                                    .popup
+                                        span Добавлено
+                                        a Перейти в корзину
+                            .item-list__el__links
+                                a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                                a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_02").btn-green.js--add-compare Сравнить
+
+                .furniture__more
+                    a(href="" data-type-magazin="03" data-url="../../../js/ajax/show-more.php" data-metod="post").js--show-more Показать еще 20 (Осталось 241)
+
+            .tabs__content.load-container
+                ul.item-list
+                    li.item-list__el
+                        .visible
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-1.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Джерси
+                                span.item-list__el__ifno-price 12
+                                    i o
+                                span.item-list__el__ifno-measure 0,1 м
+                                    i 2
+
+                        .hidden
+                            .item-list__el--img
+                                a(href="")
+                                    img(src="../../../img/img--material-1.jpg" alt /)
+                            .item-list__el__ifno
+                                a.item-list__el__ifno-title Джерси
+                                span.item-list__el__ifno-price 12
+                                    i o
+                                span.item-list__el__ifno-measure 0,1 м
+                                    i 2
+                            .item-list__el__buttons
+                                form(action="../../../js/ajax/add-basket.php" method="post")
+                                    input(type="hidden" name="item_id" value="item_01")
+                                    .counter(data-step="1")
+                                        input(type="text" name="item_amount" maxlength="3").inp.input-number
+                                        a(href="").counter-add.js--counter--button.js-add
+                                        a(href="").counter-remove.js--counter--button.js-remove
+                                    a.btn-green.js--add-basket В корзину
+                                    .popup
+                                        span Добавлено
+                                        a Перейти в корзину
+                            .item-list__el__links
+                                a(href="../pagePopup/popup-item.html" class="fancybox.ajax").btn-green.fancy Быстрый просмотр
+                                a(href="" data-url="../../../js/ajax/add-compare.php" data-method="post" data-id="item_01").btn-green.js--add-compare Сравнить
+
+                .furniture__more
+                    a(href="" data-type-magazin="04" data-url="../../../js/ajax/show-more.php" data-metod="post").js--show-more Показать еще 20 (Осталось 241)
+
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/furniture.jpg",opacity: 0.5,top: -8,left: 0,center: false,clip: true,show: false});});

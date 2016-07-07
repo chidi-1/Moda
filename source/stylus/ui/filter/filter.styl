@@ -1,0 +1,302 @@
+.filter
+  display block
+  background #fcfcfc
+  border-radius 5px 5px 0 5px
+  border 1px dashed $cGreen
+  padding 16px 30px 0
+  margin-top 40px
+  height 147px
+
+  .form-col
+    display inline-block
+    vertical-align top
+    width 235px
+
+    &__el
+      display block
+      margin-bottom 22px
+      position relative
+
+      span
+        display block
+        font-size 13px
+        color #666666
+        padding-bottom 6px
+
+      .jq-selectbox__select
+        width 243px
+        height 28px
+        border 1px solid #cccccc
+        padding 0
+        border-radius 3px
+        box-shadow none
+        background #ffffff
+
+        .jq-selectbox__select-text
+          padding-left 13px
+          font-size 13px
+          color $cGray
+          font-weight 300
+          font-family $fRoboto
+
+        .jq-selectbox__trigger
+          border-left none
+
+          .jq-selectbox__trigger-arrow
+            width 4px
+            height 4px
+            border-bottom 2px solid #cccccc
+            border-left 2px solid #cccccc
+            border-right none
+            border-top none
+            transform rotate(-45deg)
+            -wevbkit-transform rotate(-45deg)
+            top 11px
+            right 9px
+
+      .jq-selectbox__dropdown
+        margin-top 0
+
+        ul
+          box-shadow none
+          padding 2px 0
+
+          li
+            display block
+            font-size 13px
+            color $cGray
+            font-weight 300
+            padding 10px 10px 9px
+            min-height 14px
+
+          li.optgroup
+            padding-top 10px
+
+          li.option
+            padding-left 25px
+            position relative
+            padding-top 3px
+            padding-bottom 3px
+
+          li.option:before
+            position absolute
+            content '-'
+            left 15px
+            top 2px
+
+          li:hover
+            background #87be70
+            color #fff
+
+          li.selected
+            color $cGreen
+            background transparent
+
+          li.selected:hover
+            background #87be70
+            color #fff
+
+      .psevdoselect
+        width 243px
+        height 28px
+        border 1px solid #cccccc
+        padding 0
+        border-radius 3px
+        box-shadow none
+        position relative
+        display block
+        background #ffffff
+
+        span
+          padding-left 13px
+          font-size 13px
+          color $cGray
+          font-weight 300
+          display block
+          vertical-align top
+          line-height 28px
+          cursor pointer
+
+        .trigger-arrow
+          position absolute
+          right 0
+          top 0
+          width 28px
+          height 28px
+          cursor pointer
+
+        .trigger-arrow:after
+          content ''
+          width 4px
+          height 4px
+          border-bottom 2px solid #cccccc
+          border-left 2px solid #cccccc
+          border-right none
+          border-top none
+          transform rotate(-45deg)
+          -wevbkit-transform rotate(-45deg)
+          top 11px
+          right 9px
+          position absolute
+
+        .psevdoselect-hidden
+          position absolute
+          top 28px
+          left -1px
+          border 1px solid #cccccc
+          border-radius  0 3px 3px 3px
+          background #fff
+          padding 13px 0 13px 13px
+          z-index 101
+          overflow hidden
+          width 0
+          height 0
+          opacity 0
+          transition opacity 0.2s
+          -webkit-transition opacity 0.2s
+
+          label
+            display block
+            text-align left
+            width 180px
+            margin-bottom 5px
+
+            input
+              display none
+
+            .checkbox-icon
+              display inline-block
+              vertical-align middle
+              margin-right 10px
+              width 6px
+              height 6px
+              padding-top 1px
+              padding-left 1px
+              border 1px solid #8c8c8c
+              border-radius  2px
+
+              i
+                display block
+                width 5px
+                height 5px
+                border-radius 2px
+                background transparent
+
+            span
+              display inline-block
+              vertical-align middle
+              font-size 14px
+              color #666666
+              font-weight 300
+              padding-left 0
+              line-height normal
+              padding-bottom 0
+
+            input:checked + .checkbox-icon
+              border 1px solid $cGreen
+
+              i
+                background $cGreen
+
+            input:checked + .checkbox-icon + span
+              color $cGreen
+
+      .psevdoselect.psevdoselect-open
+        .psevdoselect-hidden
+          width auto
+          height auto
+          opacity 1
+
+      .psevdoselect-hidden.name-list
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+
+  .form-col.form-col-sm
+    width 175px
+
+    .inp
+      display inline-block
+      vertical-align top
+      width 76px
+      border 1px solid #cccccc
+      height 28px
+      border-radius 3px
+      padding-left 13px
+      font-size 14px
+      color #999999
+      font-weight 300
+
+    i
+      display inline-block
+      vertical-align top
+      color #666666
+      font-size 13px
+      margin-left 7px
+      margin-right 4px
+      margin-top 5px
+
+  .ui-slider-horizontal
+    width 175px
+    height 2px
+    background #e4e4e4
+    margin-top 15px
+
+    .ui-slider-range
+      width 175px
+      height 2px
+      background #b1cfab
+
+    .ui-slider-handle
+      width 8px
+      height 8px
+      background #b1cfab
+      border-radius 8px
+      padding-bottom 0
+      margin-top 1px
+      cursor pointer
+
+.filter--links
+  text-align right
+
+  .btn-green
+    border-radius  0 0 10px 10px
+    width 162px
+
+    i
+      display inline-block
+      vertical-align top
+      margin-left 5px
+
+  .filter-reset
+    display inline-block
+    vertical-align top
+    margin-right 20px
+    margin-top 13px
+    font-size 13px
+    color $cGreen
+    border-bottom 1px dashed $cGreen
+
+
+.filter-result
+  margin-top 40px
+  margin-left -20px
+  margin-bottom 50px
+
+  .filter-result__more
+    display block
+    text-align center
+    padding-top 20px
+
+    a
+      color $cGreen
+      border-bottom  1px dashed $cGreen
+
+    a:hover
+      border-bottom 1px dashed transparent
+
+
+  .filter--load-empty
+    display block
+    text-align center
+    font-size 20px
